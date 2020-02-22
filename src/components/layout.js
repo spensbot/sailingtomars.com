@@ -7,39 +7,32 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import CssBaseLine from '@material-ui/core/CssBaseline'
 
 import Header from "./header"
-import "./layout.css"
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
+const lightTheme = createMuiTheme({
+  typography:{
+    //fontFamily: '"Amatic SC", "Helvetica", "Arial", sans-serif',
+  }
+});
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  console.log(lightTheme);
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <ThemeProvider theme={lightTheme}>
+      <CssBaseLine />
+      <Header siteTitle={"Sailing To Mars"} />
+      <main>{children}</main>
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </footer>
+      </ThemeProvider>
     </>
   )
 }
