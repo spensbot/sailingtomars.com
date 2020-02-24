@@ -8,30 +8,37 @@
 import React from "react"
 import PropTypes from "prop-types"
 import CssBaseLine from '@material-ui/core/CssBaseline'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import Header from "./header"
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import Footer from "./footer"
+import { Container } from "@material-ui/core";
+
 
 const lightTheme = createMuiTheme({
   typography:{
-    //fontFamily: '"Amatic SC", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  },
+  palette: {
+    ssPrimary: {
+      
+    },
+    ssDark: {
+
+    }
   }
 });
 
 const Layout = ({ children }) => {
-  console.log(lightTheme);
-
   return (
     <>
       <ThemeProvider theme={lightTheme}>
-      <CssBaseLine />
-      <Header siteTitle={"Sailing To Mars"} />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+        <CssBaseLine />
+        <Header siteTitle={"Sailing To Mars"} />
+        <Container maxWidth="md">
+          <main>{children}</main>
+        </Container>
+        <Footer/>
       </ThemeProvider>
     </>
   )

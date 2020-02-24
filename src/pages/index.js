@@ -1,28 +1,46 @@
 import React from "react"
-import { Link } from "gatsby"
+import { makeStyles } from '@material-ui/core/styles'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import ImageMe from '../components/images/Home/me'
+import Box from "@material-ui/core/Box"
+import Typography from '@material-ui/core/Typography'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>A Passionate, Creative, and Extroverted Engineer</h1>
-    <p>I am happiest when creating something I care about. I'm currently exploring all my interests, in hopes that it will lead me to a career where I have the most to give.</p>
+const useStyles = makeStyles( theme => ({
+  root: {
+  },
 
-    <p>In July 2019, I quit my job as a Mechanical engineer to pursue a career in software design.</p>
+}));
 
-    <p>This site showcases a few of the skills and projects I developed through personal interest.</p>
+const IndexPage = () => {
 
-    <p>Thanks for visiting,</p>
+  const classes = useStyles();
 
-    <p>Spenser Saling</p>
-    <div>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Box display="flex" flexDirection="row" alignItems="top" flexWrap="wrap">
+        <Box flex="2" minWidth="15rem">
+          <Typography component="h3" variant="h4">
+            A Passionate, Creative, and Extroverted Engineer
+          </Typography>
+          <Typography>
+            <p>I am happiest when creating something I care about. I'm currently exploring all my interests, in hopes that it will lead me to a career where I have the most to give.</p>
+            <p>In July 2019, I quit my job as a Mechanical engineer to pursue a career in software design.</p>
+            <p>This site showcases a few of the skills and projects I developed through personal interest.</p>
+            <p>Thanks for visiting,</p>
+            <p>Spenser Saling</p>
+          </Typography>
+          
+        </Box>
+
+        <Box flex="1" minWidth="15rem">
+          <ImageMe />
+        </Box>
+      </Box>
+    </Layout>
+  )
+}
 
 export default IndexPage
