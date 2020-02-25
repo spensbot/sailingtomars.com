@@ -4,8 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
-import Container from '@material-ui/core/Container'
-import ImageWhiteBGL from './images/logo/WhiteBGL'
+import SiteContainer from './SiteContainer'
 import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles( theme => ({
@@ -38,7 +37,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className={classes.root}>
-      <Container maxWidth="md">
+      <SiteContainer>
         <Box display="flex" flexDirection="row" alignItems="center" justifyContent="left">
           {/* <div className={classes.logo}>
             <ImageWhiteBGL />
@@ -50,7 +49,7 @@ const Header = ({ siteTitle }) => {
             <Typography>A Portfolio Site For Spenser Saling</Typography>
           </Box>
         </Box>
-      </Container>
+      </SiteContainer>
     </header>
   )
 }

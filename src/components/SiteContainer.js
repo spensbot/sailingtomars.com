@@ -1,11 +1,11 @@
 import React from 'react'
+import { Container } from '@material-ui/core'
 
-export default function SiteContainer() {
+export default function SiteContainer({children}) {
   return (
-    
-    <div>
-      
-    </div>
+    <Container maxWidth="md">
+      {children}
+    </Container>
   )
 }
 

@@ -1,18 +1,24 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import { SocialIcon } from 'react-social-icons';
+import { makeStyles } from '@material-ui/core/styles'
+import { SocialIcon } from 'react-social-icons'
+import SiteContainer from './SiteContainer'
 
 import FooterList from './footerList';
-import { Box } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
+import links from './links'
 
 const getStyles = makeStyles( theme => ({
   root: {
     textAlign: 'center',
-    padding: theme.spacing(5),
+    paddingTop: theme.spacing(5),
+    paddingBottom: theme.spacing(5),
+    background: theme.palette.ss.darkSectionBG,
+    color: theme.palette.ss.darkSectionColor
+    //background: 'rgb(75,75,100)'
     //borderTop: '1px solid rgba(0,0,0,0.1)'
   },
   socialIcon: {
-    marginLeft: '5px'
+    margin: '.25rem',
   }
 }))
 
@@ -28,28 +34,12 @@ export default function footer() {
 
   return (
     <footer className={classes.root}>
+      <SiteContainer>
+        <Typography>More from Sailing To Mars</Typography>
         <Box display="flex" flexDirection="row" flexWrap="wrap">
-          <FooterList title="Games"
-            links={[
-              {name: 'SadBoy', url: '/'},
-              {name: 'Personal Space', url: '/'}
-            ]}
-          ></FooterList>
-          <FooterList title="Websites"
-            links={[
-              {name: 'Feel With Me', url: '/'},
-              {name: 'This Website!', url: '/'}
-            ]}
-          ></FooterList>
-          <FooterList title="Music Software"
-            links={[
-              {name: 'Crispy Saturator', url: '/'},
-              {name: 'Crispy Synth', url: '/'},
-              {name: 'Lush', url: '/'},
-              {name: 'Lush Verb', url: '/'},
-              {name: 'Garage Lights', url: '/'}
-            ]}
-          ></FooterList>
+          {links.map(link => (
+            <FooterList key={link.category} title={link.category} links={link.links} />
+          ))}
         </Box>
         <div>
         {socialLinks.map(link => (
@@ -57,6 +47,7 @@ export default function footer() {
         ))}
         </div>
         © {new Date().getFullYear()} By Spenser Saling
+      </SiteContainer>
     </footer>
   )
 }
