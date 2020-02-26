@@ -18,7 +18,7 @@ export default [
     category: 'Game Dev',
     links : [
       {name: 'SadBoy', url: '/'},
-      {name: 'Personal Space', url: '/'}
+      {name: 'Personal Space', url: '/personal-space'}
     ]
   },
   {

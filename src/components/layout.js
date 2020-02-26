@@ -10,22 +10,27 @@ import PropTypes from "prop-types"
 import CssBaseLine from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/core/styles';
 
+import SEO from "./seo"
 import Header from "./header"
 import Footer from "./footer"
-import SiteContainer from './SiteContainer'
 import theme from './theme'
 import Content from './content'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, seoTitle, usesHeader, usesFooter }) => {
+  if (!seoTitle){
+    console.error("Missing SEO Title!")
+  }
+
   return (
     <>
+      <SEO title={seoTitle} />
       <ThemeProvider theme={theme}>
         <CssBaseLine />
-        <Header siteTitle={"Sailing To Mars"} />
+        { usesHeader ? <Header /> : null }
         <Content>
           { children }
         </Content>
-        <Footer/>
+        { usesFooter ? <Footer /> : null }
       </ThemeProvider>
     </>
   )
