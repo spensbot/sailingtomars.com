@@ -1,6 +1,13 @@
 import React from "react"
-import logoSvg from '../../../images/Mobile Store Icons/google-play-badge.png'
+import source from '../../../images/Mobile Store Icons/google-play-badge.svg'
 
-const LogoSvg = () => <><img src={logoSvg} /></>
+const Image = () => {
+  const style = {
+    maxWidth: '100%',
+    height: 'auto'
+  }
 
-export default LogoSvg
+  return <img alt="Google Play Store Badge" src={source} style={style} />
+}
+
+export default Image

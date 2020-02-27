@@ -1,6 +1,13 @@
 import React from "react"
-import logoSvg from '../../../images/logo/ios-store-badge.svg'
+import source from '../../../images/Mobile Store Icons/ios-store-badge.svg'
 
-const LogoSvg = () => <><img src={logoSvg} /></>
+const Image = () => {
+  const style = {
+    maxWidth: '100%',
+    height: 'auto'
+  }
 
-export default LogoSvg
+  return <img alt="ios App Store Badge" src={source} style={style} />
+}
+
+export default Image

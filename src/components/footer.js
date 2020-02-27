@@ -5,7 +5,7 @@ import SiteContainer from './SiteContainer'
 
 import FooterList from './footerList'
 import { Box, Typography} from '@material-ui/core'
-import links from './links'
+import links from '../data/links'
 import Divider from './basic/divider'
 
 const getStyles = makeStyles( theme => ({
@@ -31,13 +31,6 @@ const getStyles = makeStyles( theme => ({
 
 export default function footer() {
   const classes = getStyles();
-  const socialLinks = [
-    "https://www.facebook.com/spenser.saling",
-    "https://www.instagram.com/spenser_saling/",
-    "https://www.linkedin.com/in/spenser-saling-4a0833aa/",
-    "https://github.com/spensbot",
-    "https://soundcloud.com/salingtomars"
-  ]
 
   return (
     <footer className={classes.root}>
@@ -47,14 +40,14 @@ export default function footer() {
         <Divider color="#ffffffdd" marginY="1rem"/>
 
         <Box display="flex" flexDirection="row" flexWrap="wrap">
-          {links.map(link => (
+          {links.local.map(link => (
             <FooterList key={link.category} title={link.category} links={link.links} />
           ))}
         </Box>
 
         <Box display='flex' justifyContent='center'>
           <div className={classes.socialIconGroup}>
-          {socialLinks.map(link => (
+          {links.external.socialMedia.map(link => (
             <SocialIcon className={classes.socialIcon} key={link} url={link} />
           ))}
           </div>
