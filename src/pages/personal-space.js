@@ -4,7 +4,8 @@ import { Typography, createMuiTheme, ThemeProvider, Box, Paper, Button } from "@
 import Layout from "../components/layout"
 
 import ParticleBackground from '../components/Personal Space/particleBackground'
-import Graphic from '../components/images/Personal Space/graphic'
+import GraphicBomb from '../components/images/Personal Space/graphicBomb'
+import GraphicEnemies from '../components/images/Personal Space/graphicEnemies'
 import Player from '../components/images/Personal Space/player'
 import Enemy from '../components/images/Personal Space/enemy'
 import MobileStoreButton from 'react-mobile-store-button';
@@ -24,10 +25,10 @@ const personalSpaceTheme = createMuiTheme({
 
 const useStyles = makeStyles(theme => ({
   root: {
+    color: '#fff'
   },
   reallyBigHeader: {
     color: '#fff',
-    minHeight: '100vh',
     textAlign: 'center'
   },
   headerText: {
@@ -38,25 +39,34 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center'
   },
   paper: {
-    padding: personalSpaceTheme.spacing(2),
+    padding: personalSpaceTheme.spacing(4),
   },
   graphic: {
-    maxHeight: '60vh',
-    maxWidth: '50rem',
-    widht: 'auto'
+    flexGrow: '1',
+    maxWidth: '30rem'
   },
   player: {
-    width: '8rem',
-    height: '8rem',
+    width: '6rem',
+    height: '6rem',
     animation: '$wave 10s ease-in-out infinite',
-    transform: 'scaleX(50%)',
-    margin: '1rem'
+    transform: 'rotate(45deg)',
+    margin: '1rem',
   },
   enemy: {
-    width: '8rem',
-    height: '8rem',
+    width: '7rem',
+    height: '7rem',
     margin: '1rem',
     animation: '$spin 10s linear infinite',
+  },
+  giantEmoji: {
+    fontSize: '10rem',
+    textAlign: 'center'
+  },
+  section: {
+    marginBottom: '3rem'
+  },
+  button: {
+    
   },
   '@keyframes spin': {
     '0%': {
@@ -64,17 +74,6 @@ const useStyles = makeStyles(theme => ({
     },
     '100%': {
       transform: 'rotate(360deg)'
-    }
-  },
-  '@keyframes wave':{
-    '0%': {
-      transform: 'rotate(0deg) translate(0rem,0)'
-    },
-    '50%': {
-      transform: 'rotate(-90deg) translate(0rem,0)'
-    },
-    '100%': {
-      tranform: 'rotate(0deg) translate(0rem,0)'
     }
   }
 }))
@@ -100,19 +99,20 @@ const PersonalSpace = () => {
               </div>
             </Box>
 
-            {/* <Box width='100%' minHeight='60vh' display="flex" justifyContent="center">
-              <div className={classes.graphic}>
-                <Graphic />
-              </div>
-            </Box> */}
-            <iframe width="270" height="514" src="https://www.youtube.com/embed/sas6KopcWWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <Typography component="h2" className={classes.subHeaderText}>
-              A Game About Fighting For Your God-Given Right To Privacy
-            </Typography>
+            <div className={classes.section}>
+              <iframe width="270" height="514" src="https://www.youtube.com/embed/sas6KopcWWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+
+            <div className={classes.section}> 
+              <Typography component="h2" className={classes.subHeaderText}>
+                A Game About Fighting For Your God-Given Right To Privacy
+              </Typography>
+            </div>
 
           </div>
+          <div className={classes.section}>
           <Paper className={classes.paper} elevation={3}>
-            <Typography component="h2" className={classes.subHeaderText}>
+            <Typography component="h2" className={classes.subHeaderText} gutterBottom={true}>
               Defend Your Personal Space Today
             </Typography>
             <Box display="flex" flexWrap="wrap" justifyContent="center">
@@ -126,31 +126,54 @@ const PersonalSpace = () => {
                 url={"/"}
                 linkProps={{ title: 'iOS Store Button' }}
               />
-              
             </Box>
           </Paper>
+          </div>
 
+          <div className={classes.section}>
+            <Typography component="h2" className={classes.subHeaderText}>
+                Weave Your Way Through Enemies To Activate Bombs!
+            </Typography>
+            <Box display='flex' justifyContent='center'>
+            <div className={classes.graphic}><GraphicEnemies /></div>
+            </Box>
+          </div>
 
-          <Typography component="h2" className={classes.subHeaderText}>
-              Fine-Tuned Difficulty
-          </Typography>
-          {/* <Typography component="h2" className={classes.subHeaderText}>
-              The Game Starts-out playable, but quickly becomes a challenge
-          </Typography> */}
-          <DifficultyGraph />
+          <div className={classes.section}>
+            <Typography component="h2" className={classes.subHeaderText}>
+                Hit bombs in the center for a bigger explosion!
+            </Typography>
+            <Box display='flex' justifyContent='center'>
+              <div className={classes.graphic}><GraphicBomb /></div>
+            </Box>
+          </div>
 
-          <Typography component="h2" className={classes.subHeaderText}>
-              Weave Your Way Through Enemies To Activate Bombs!
-          </Typography>
+          <div className={classes.section}>
+            <Typography component="h2" className={classes.subHeaderText}>
+                The game ends when an enemy successfully invades your personal space
+            </Typography>
+            <Box textAlign='center'>
+            <span className={classes.giantEmoji}>😭</span>
+            </Box>
+          </div>
 
-          <Typography component="h2" className={classes.subHeaderText}>
-              Personal Space is Built with Unity
-          </Typography>
-          <Typography component="h2" className={classes.subHeaderText}>
-              If you're the programming type
-          </Typography>
-          <Button variant="contained">view the source code on github</Button>
+          <div className={classes.section}>
+            <Typography component="h2" className={classes.subHeaderText} gutterBottom={true}>
+                Experience Fine-Tuned Difficulty
+            </Typography>
+            <DifficultyGraph />
+          </div>
 
+          <div className={classes.section}>
+          <Paper className={classes.paper} elevation={3}>
+            <Box display='flex' flexDirection='column' alignItems='center'>
+              <Typography component="h2" className={classes.subHeaderText} gutterBottom={true}>
+                  Personal Space is Built with Unity
+              </Typography>
+              <Button variant="contained">-> view the source code on github</Button>
+            </Box>
+          </Paper>
+          </div>
 
         </div>
       </ThemeProvider>

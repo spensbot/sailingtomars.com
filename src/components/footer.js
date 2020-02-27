@@ -3,9 +3,10 @@ import { makeStyles } from '@material-ui/core/styles'
 import { SocialIcon } from 'react-social-icons'
 import SiteContainer from './SiteContainer'
 
-import FooterList from './footerList';
-import { Box, Typography } from '@material-ui/core';
+import FooterList from './footerList'
+import { Box, Typography} from '@material-ui/core'
 import links from './links'
+import Divider from './basic/divider'
 
 const getStyles = makeStyles( theme => ({
   root: {
@@ -19,6 +20,12 @@ const getStyles = makeStyles( theme => ({
   },
   socialIcon: {
     margin: '.25rem',
+  },
+  socialIconGroup: {
+    padding: '.25rem',
+    borderRadius: '10rem',
+    backgroundColor: '#ffffffdd',
+    marginBottom: '1rem'
   }
 }))
 
@@ -35,17 +42,23 @@ export default function footer() {
   return (
     <footer className={classes.root}>
       <SiteContainer>
-        <Typography>More from Sailing To Mars</Typography>
+        <Typography variant="h5" gutterBottom={true}>More from Sailing To Mars</Typography>
+
+        <Divider color="#ffffffdd" marginY="1rem"/>
+
         <Box display="flex" flexDirection="row" flexWrap="wrap">
           {links.map(link => (
             <FooterList key={link.category} title={link.category} links={link.links} />
           ))}
         </Box>
-        <div>
-        {socialLinks.map(link => (
-          <SocialIcon className={classes.socialIcon} key={link} url={link} />
-        ))}
-        </div>
+
+        <Box display='flex' justifyContent='center'>
+          <div className={classes.socialIconGroup}>
+          {socialLinks.map(link => (
+            <SocialIcon className={classes.socialIcon} key={link} url={link} />
+          ))}
+          </div>
+        </Box>
         © {new Date().getFullYear()} By Spenser Saling
       </SiteContainer>
     </footer>

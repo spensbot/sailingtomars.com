@@ -25,7 +25,7 @@ const IndexPage = () => {
             A Passionate, Creative, and Extroverted Engineer
           </Typography>
           <Typography>
-            <p>I am happiest when creating something I care about. I'm currently exploring all my interests, in hopes that it will lead me to a career where I have the most to give.</p>
+            <p>I am happiest when creating or learning about something I care for. I'm currently exploring all my interests, in hopes that it will lead me to a career where I have the most to give.</p>
             <p>In July 2019, I quit my job as a Mechanical engineer to pursue a career in software design.</p>
             <p>This site showcases a few of the skills and projects I developed through personal interest.</p>
             <p>Thanks for visiting,</p>
