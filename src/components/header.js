@@ -23,8 +23,8 @@ const useStyles = makeStyles( theme => ({
 
   logo: {
     marginTop: '2rem',
-    width: '20rem',
-    height: '20rem',
+    width: '16rem',
+    height: '16rem',
     //animation: `$ani ${animationPeriod}s infinite ease-in-out`
   },
 

@@ -1,64 +1,94 @@
+// ALL HARD CODED LINKS GO HERE
+const links = {
+  //Web Dev
+  sailingToMars: {
+    home: '/',
+    resume: '/',
+    contact: '/'
+  },
 
-export default {
+  //Game Dev
+  personalSpace: {
+    home: '/personal-space',
+    iosStore: '/',
+    googlePlay: '/',
+    github: '/'
+  },
 
-//-----------------     LOCAL SITE LINKS     ---------------
-  local: [
+  //Music Software
+
+
+  //Other
+
+
+  //Social
+  socialMedia: {
+    facebook: "https://www.facebook.com/spenser.saling",
+    instagram: "https://www.instagram.com/spenser_saling/",
+    linkedIn: "https://www.linkedin.com/in/spenser-saling-4a0833aa/",
+    github: "https://github.com/spensbot",
+    soundCloud: "https://soundcloud.com/salingtomars"
+  }
+}
+
+
+
+// NO HARD CODED LINKS HERE.
+//THIS IS WHERE LINKS CAN BE GROUPED/ORDERED FOR USE IN THE SITE
+const linksOrdered = {
+//-----------------     FOOTER LINKS     ---------------
+  byCategory: [
     {
       category: 'Main',
       links: [
-        {name: 'Home', url: '/'},
-        {name: 'Resume', url: '/'},
-        {name: 'Contact', url: '/'}
+        {name: 'Home', url: links.sailingToMars.home},
+        {name: 'Resume', url: links.sailingToMars.resume},
+        {name: 'Contact', url: links.sailingToMars.contact}
       ]
     },
     {
       category: 'Web Dev',
       links: [
-        {name: 'Feel With Me', url: '/'},
-        {name: 'This Website!', url: '/'}
+        // {name: 'Feel With Me', url: '/'},
+        {name: 'Sailing To Mars', url: '/'}
       ]
     },
     {
       category: 'Game Dev',
       links : [
-        {name: 'SadBoy', url: '/'},
-        {name: 'Personal Space', url: '/personal-space'}
+        // {name: 'SadBoy', url: '/'},
+        {name: 'Personal Space', url: links.personalSpace.home}
       ]
     },
     {
       category: 'Music Software',
       links : [
-        {name: 'Crispy Saturator', url: '/'},
-        {name: 'Crispy Synth', url: '/'},
-        {name: 'Lush', url: '/'},
-        {name: 'Lush Verb', url: '/'},
-        {name: 'Garage Lights', url: '/'}
+        {name: 'Crispy Saturator (Coming Soon!)', url: '/'},
+        // {name: 'Crispy Synth', url: '/'},
+        // {name: 'Lush', url: '/'},
+        // {name: 'Lush Verb', url: '/'},
+        // {name: 'Garage Lights', url: '/'}
       ]
     },
     {
       category: 'Other',
       links : [
-        {name: 'Music', url: '/'},
-        {name: '3D Printing', url: '/'},
+        {name: 'Music (Coming Soon!)', url: '/'},
+        // {name: '3D Printing', url: '/'},
+        // {name: 'Blog', url: }
       ]
     }
   ],
 
 //-----------------     EXTERNAL LINKS     ---------------
-  external: {
 
-    personalSpace: {
-      iosStoreUrl: '/',
-      googlePlayStoreUrl: '/',
-      githubUrl: '/'
-    },
-
-    socialMedia:[
-      "https://www.facebook.com/spenser.saling",
-      "https://www.instagram.com/spenser_saling/",
-      "https://www.linkedin.com/in/spenser-saling-4a0833aa/",
-      "https://github.com/spensbot",
-      "https://soundcloud.com/salingtomars"
-    ]
-  }
+  socialMedia:[
+    links.socialMedia.github,
+    links.socialMedia.linkedIn,
+    links.socialMedia.facebook,
+    links.socialMedia.instagram,
+    links.socialMedia.soundCloud
+  ]
 }
+
+export {links, linksOrdered}

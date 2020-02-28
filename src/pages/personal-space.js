@@ -10,7 +10,7 @@ import Player from '../components/images/Personal Space/player'
 import Enemy from '../components/images/Personal Space/enemy'
 import DifficultyGraph from '../components/images/Personal Space/difficultyGraph'
 import AppStoreButton from '../components/basic/appStoreButton'
-import links from '../data/links'
+import {links} from '../data/links'
 
 const personalSpaceTheme = createMuiTheme({
   typography:{
@@ -128,8 +128,8 @@ const PersonalSpace = () => {
               Defend Your Personal Space Today
             </Typography>
             <Box display="flex" flexWrap="wrap" justifyContent="center">
-              <AppStoreButton link={links.external.personalSpace.iosStoreUrl} />
-              <AppStoreButton link={links.external.personalSpace.googlePlayStoreUrl} isAndroid />
+              <AppStoreButton link={links.personalSpace.iosStore} />
+              <AppStoreButton link={links.personalSpace.googlePlay} isAndroid />
             </Box>
           </Paper>
           </div>
@@ -174,7 +174,7 @@ const PersonalSpace = () => {
               <Typography component="h2" className={classes.subHeaderText} gutterBottom={true}>
                   Personal Space is Built with Unity
               </Typography>
-              <Button variant="contained" ><span className={classes.button}>-> view the source code on github</span></Button>
+              <Button variant="contained" href={links.personalSpace.github}><span className={classes.button}>-> view the source code on github</span></Button>
             </Box>
           </Paper>
           </div>
