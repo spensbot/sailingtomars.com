@@ -4,7 +4,8 @@ const links = {
   sailingToMars: {
     home: '/',
     resume: '/',
-    contact: '/'
+    contact: '/',
+    github: '/'
   },
 
   //Game Dev

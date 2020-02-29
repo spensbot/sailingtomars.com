@@ -11,6 +11,7 @@ import Enemy from '../components/images/Personal Space/enemy'
 import DifficultyGraph from '../components/images/Personal Space/difficultyGraph'
 import AppStoreButton from '../components/basic/appStoreButton'
 import {links} from '../data/links'
+import SiteContainer from "../components/SiteContainer";
 
 const personalSpaceTheme = createMuiTheme({
   typography:{
@@ -95,6 +96,7 @@ const PersonalSpace = () => {
 
   return (
     <Layout seoTitle="Personal Space" usesFooter={true}>
+    <SiteContainer>
       <ThemeProvider theme={personalSpaceTheme}>
         <div className={classes.root}>
           <ParticleBackground/>
@@ -181,6 +183,7 @@ const PersonalSpace = () => {
 
         </div>
       </ThemeProvider>
+      </SiteContainer>
     </Layout>
   )
 }

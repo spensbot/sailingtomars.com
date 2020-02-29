@@ -27,9 +27,7 @@ const Layout = ({ children, seoTitle, usesHeader, usesFooter }) => {
       <ThemeProvider theme={theme}>
         <CssBaseLine />
         { usesHeader ? <Header /> : null }
-        <Content>
-          { children }
-        </Content>
+        { children }
         { usesFooter ? <Footer /> : null }
       </ThemeProvider>
     </>

@@ -6,7 +6,7 @@ export default createMuiTheme({
   },
   palette: {
     ss: {
-      darkSectionBG: 'rgb(70,70,100)',
+      darkSectionBG: 'rgb(70,70,80)',
       darkSectionColor: 'rgb(240,240,240)'
     }
   },
