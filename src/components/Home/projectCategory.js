@@ -9,6 +9,9 @@ const getStyles = makeStyles(theme => ({
     background: 'linear-gradient(180deg, rgba(150,150,150,1) 0%, rgba(240,240,240,1) 100%)',
     padding: '5rem 0',
     width: '100%'
+  },
+  title: {
+    marginBottom: '5rem'
   }
 }))
 
@@ -18,10 +21,9 @@ export default function projectCategory({name, children}) {
   return (
     <div className={classes.root}>
       <SiteContainer>
-        <Typography variant='h3' component='h3'>
+        <Typography variant='h3' component='h3' className={classes.title}>
           {name}
         </Typography>  
-
         {children}
       </SiteContainer>
     </div>

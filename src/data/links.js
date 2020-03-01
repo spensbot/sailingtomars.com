@@ -3,9 +3,9 @@ const links = {
   //Web Dev
   sailingToMars: {
     home: '/',
-    resume: '/',
-    contact: '/',
-    github: '/'
+    resume: '/resume',
+    contact: '/contact',
+    github: 'https://github.com/spensbot/sailingtomars.com'
   },
 
   //Game Dev
@@ -13,7 +13,7 @@ const links = {
     home: '/personal-space',
     iosStore: '/',
     googlePlay: '/',
-    github: '/'
+    github: 'https://github.com/spensbot/Personal-Space'
   },
 
   //Music Software

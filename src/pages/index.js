@@ -9,17 +9,27 @@ import ProjectCategory from '../components/Home/projectCategory'
 import ProjectBlock from "../components/Home/projectBlock"
 import { links } from "../data/links"
 import Section from '../components/Home/Section'
+import PersonalSpaceProjectImage from '../components/images/Personal Space/projectImage'
+import SailingToMarsProjectImage from '../components/images/Home/ProjectImage'
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 const useStyles = makeStyles( theme => ({
   root: {
     
   },
+  arrow: {
+    width: '7rem',
+    height: '7rem'
+  }
 
 }));
 
 const IndexPage = () => {
 
   const classes = useStyles();
+
+  const PersonalSpaceImage = <PersonalSpaceProjectImage />
+  const SailingToMarsImage = <SailingToMarsProjectImage />
 
   return (
     <Layout seoTitle="Home" usesHeader={true} usesFooter={true}>
@@ -53,14 +63,28 @@ const IndexPage = () => {
         </Box>
 
       </Box>
+
+      <Box textAlign="center">
+        <Typography variant="h4">Keep Scrolling to See Some of the Projects I'm Most Proud of</Typography>
+        <ArrowDownwardIcon className={classes.arrow} />
+      </Box>
+
       </Section>
 
       <ProjectCategory name="Web Development">
-        <ProjectBlock name="Sailing To Mars" githubLink={links.sailingToMars.github}/>
+        <ProjectBlock name="Sailing To Mars" Image={SailingToMarsImage} hours="20" coreTechnology="JS / React / Gatsby" githubLink={links.sailingToMars.github}/>
       </ProjectCategory>
 
       <ProjectCategory name="Game Development">
-        <ProjectBlock name="Personal Space" githubLink={links.personalSpace.github} />
+        <ProjectBlock name="Personal Space" Image={PersonalSpaceImage} hours="3.5" coreTechnology="C# / Unity" githubLink={links.personalSpace.github}>
+          <Typography component="h4" variant="h4">
+            I love the variety involved in Game Development
+          </Typography>
+          <Typography>
+            It's nice
+          </Typography>
+
+        </ProjectBlock>
       </ProjectCategory>
 
       <ProjectCategory name="Music Software">
