@@ -2,20 +2,21 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Typography } from '@material-ui/core';
 import SiteContainer from '../SiteContainer';
+import Spacer from '../basic/Spacer';
 
 const getStyles = makeStyles(theme => ({
   root:{
     background: 'rgb(61,101,161)',
-    background: 'linear-gradient(180deg, rgba(150,150,150,1) 0%, rgba(240,240,240,1) 100%)',
+    background: `linear-gradient(180deg, ${theme.palette.background.default} 0%, rgba(200, 200, 200, 1) 100%)`,
     padding: '5rem 0',
     width: '100%'
   },
   title: {
-    marginBottom: '5rem'
+    marginBottom: '1rem'
   }
 }))
 
-export default function projectCategory({name, children}) {
+export default function projectCategory({name, description, children}) {
   const classes = getStyles();
 
   return (
@@ -24,6 +25,10 @@ export default function projectCategory({name, children}) {
         <Typography variant='h3' component='h3' className={classes.title}>
           {name}
         </Typography>  
+        <Typography>
+          {description}
+        </Typography>  
+        <Spacer />
         {children}
       </SiteContainer>
     </div>

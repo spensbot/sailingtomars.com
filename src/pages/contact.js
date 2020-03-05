@@ -1,18 +1,23 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Typography } from '@material-ui/core'
-import Section from '../components/Home/Section'
+import Spacer from '../components/basic/Spacer'
+import SiteContainer from '../components/SiteContainer'
 
-export default function resume() {
+export default function contact() {
   return (
-    <Layout seoTitle="Home" usesHeader={true} usesFooter={true}>
-      <Section>
-      <Typography variant="h1" component="h1" gutterBottom>Contact</Typography>
+    <Layout seoTitle="Home" usesHeader usesFooter>
+      <SiteContainer>
+      <Spacer />
+      <Typography variant="h3" component="h1" gutterBottom>Contact</Typography>
       <Typography>Spenser Saling</Typography>
       <Typography>+1 (503) 853 5767</Typography>
       <Typography>Gresham, Or USA</Typography>
-      <Typography>spenser0saling@gmail.com</Typography>
-      </Section>
+      <Typography gutterButtom>spenser0saling@gmail.com</Typography>
+      <Spacer />
+      <Typography variant="h5" component="h1" gutterBottom>If you are interested in working together, let me know!</Typography>
+      <Spacer />
+      </SiteContainer>
     </Layout>
   )
 }

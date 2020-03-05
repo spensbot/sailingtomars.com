@@ -14,7 +14,6 @@ import SEO from "./seo"
 import Header from "./header"
 import Footer from "./footer"
 import theme from './theme'
-import Content from './content'
 
 const Layout = ({ children, seoTitle, usesHeader, usesFooter }) => {
   if (!seoTitle){

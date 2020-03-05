@@ -2,7 +2,6 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Typography, Paper, Box } from '@material-ui/core';
 import ViewSourceCodeButton from '../basic/viewSourceCodeButton';
-import ProjectImage from '../images/Personal Space/projectImage';
 
 const getStyles = makeStyles(theme => ({
   root:{
@@ -15,9 +14,10 @@ const getStyles = makeStyles(theme => ({
     overflow: 'hidden',
   },
   header: {
-    height: '30rem',
+    height: '35rem',
     width: '100%',
-    position: 'relative'
+    position: 'relative',
+    cursor: 'pointer'
   },
   title: {
     padding: '1rem',
@@ -33,7 +33,7 @@ const getStyles = makeStyles(theme => ({
   },
   titleInfo: {
     textAlign: 'right',
-    
+    flexGrow: 1
   },
   titleImage: {
     position: 'absolute',
@@ -41,7 +41,9 @@ const getStyles = makeStyles(theme => ({
     left: '0',
     right: '0',
     bottom: '0',
-    overflow: 'hidden'
+    height: '100%',
+    //overflow: 'hidden',
+    //objectFit: 'cover'
   },
   section: {
     padding: '1rem',
@@ -53,24 +55,28 @@ const getStyles = makeStyles(theme => ({
   }
 }))
 
-export default function projectBlock({name, Image, hours, coreTechnology, githubLink, children}) {
+export default function projectBlock({name, Image, url, hours, coreTechnology, githubUrl, children}) {
   const classes = getStyles();
+
+  const onclick = {
+    
+  }
 
   return (
     <div className={classes.root}>
-      <div className={classes.header}>
+      <div className={classes.header} onclick={`location.href=${url}`}>
         <div className={classes.titleImage}>{Image}</div>
         <div className={classes.title}>
           <Typography variant="h3" component="h3">{name}</Typography>
           <div className={classes.titleInfo}>
-            <Typography>{hours} hours</Typography>
+            {/* <Typography>{hours} hours</Typography> */}
             <Typography>{coreTechnology}</Typography>
           </div>
         </div>
       </div>
       <div className={classes.children}>
         {children}
-        <ViewSourceCodeButton />
+        <ViewSourceCodeButton url={githubUrl} />
       </div>
 
     </div>

@@ -2,16 +2,11 @@ import React from "react"
 import { makeStyles } from '@material-ui/core/styles'
 
 import Layout from "../components/layout"
-import ImageMe from '../components/images/Home/me'
-import Box from "@material-ui/core/Box"
-import Typography from '@material-ui/core/Typography'
 import ProjectCategory from '../components/Home/projectCategory'
-import ProjectBlock from "../components/Home/projectBlock"
-import { links } from "../data/links"
-import Section from '../components/Home/Section'
-import PersonalSpaceProjectImage from '../components/images/Personal Space/projectImage'
-import SailingToMarsProjectImage from '../components/images/Home/ProjectImage'
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import AboutTheName from '../components/Home/AboutTheName'
+import Intro from '../components/Home/Intro'
+import PersonalSpace from '../components/Project Blocks/PersonalSpace'
+import SailingToMars from '../components/Project Blocks/SailingToMars'
 
 const useStyles = makeStyles( theme => ({
   root: {
@@ -21,89 +16,30 @@ const useStyles = makeStyles( theme => ({
     width: '7rem',
     height: '7rem'
   }
-
 }));
 
 const IndexPage = () => {
 
   const classes = useStyles();
 
-  const PersonalSpaceImage = <PersonalSpaceProjectImage />
-  const SailingToMarsImage = <SailingToMarsProjectImage />
-
   return (
-    <Layout seoTitle="Home" usesHeader={true} usesFooter={true}>
-      <Section>
-      <Box display="flex" flexDirection="row" alignItems="top" flexWrap="wrap">
-        <Box flex="2" minWidth="15rem">
-          <Typography component="h3" variant="h4" gutterBottom={true}>
-            A Passionate, Creative, and Extroverted Engineer
-          </Typography>
-          <Typography component="p" gutterBottom={true}>
-            I am happiest when creating or learning about something I care for. I'm currently exploring all my interests, in hopes that it will lead me to a career where I have the most to give.
-          </Typography>
-          <Typography component="p" gutterBottom={true}>
-            In July 2019, I quit my job as a Mechanical engineer to pursue a career in software design.
-          </Typography>
-          <Typography component="p" gutterBottom={true}>
-            This site showcases a few of the skills and projects I developed through personal interest.
-          </Typography>
-          <Typography component="p" gutterBottom={true}>
-          Thanks for visiting, 
-          </Typography>
-          <Typography component="p" gutterBottom={true}>
-          Spenser Saling
-          </Typography>
-        </Box>
+    <Layout seoTitle="Home" usesHeader usesFooter>
 
-        <Box width="2rem"></Box>
+      <Intro />
 
-        <Box flex="1" minWidth="15rem">
-          <ImageMe />
-        </Box>
-
-      </Box>
-
-      <Box textAlign="center">
-        <Typography variant="h4">Keep Scrolling to See Some of the Projects I'm Most Proud of</Typography>
-        <ArrowDownwardIcon className={classes.arrow} />
-      </Box>
-
-      </Section>
-
-      <ProjectCategory name="Web Development">
-        <ProjectBlock name="Sailing To Mars" Image={SailingToMarsImage} hours="20" coreTechnology="JS / React / Gatsby" githubLink={links.sailingToMars.github}/>
+      <ProjectCategory name="Web Development" description="I love web development because of it's wide range of applications. Javascript is an incredible, unique language, shaped by the asynchronous nature of the web. Using technologies like Node, Electron, and React, I can create cross-platform desktop, mobile, and web apps.">
+        <SailingToMars />
       </ProjectCategory>
 
-      <ProjectCategory name="Game Development">
-        <ProjectBlock name="Personal Space" Image={PersonalSpaceImage} hours="3.5" coreTechnology="C# / Unity" githubLink={links.personalSpace.github}>
-          <Typography component="h4" variant="h4">
-            I love the variety involved in Game Development
-          </Typography>
-          <Typography>
-            It's nice
-          </Typography>
-
-        </ProjectBlock>
+      <ProjectCategory name="Game Development" description="I love game development because of it's variety. When working on a game, I get to design graphics, music, sound, and program structure. Games also have a deeply object-oriented nature that makes them incredibly satisfying to work with.">
+        <PersonalSpace />
       </ProjectCategory>
 
-      <ProjectCategory name="Music Software">
-
+      <ProjectCategory name="Music Software" description="I have worked in music production software for about 10 years now. I always had ideas for plugins, and a few years ago I realized I had the skillset to create those plugins.">
       </ProjectCategory>
 
-      <Section>
-      <Typography component='h3' variant='h3' gutterBottom={true}>About The Name</Typography>
-      <Typography component='p' gutterBottom={true}>
-        In high school, a friend Sean Mars and I joked about starting a band called Saling To Mars.  When I started playing acoustic shows around Eugene, I used the name as a placeholder for a stage name.  Eventually, the placeholder took on a significance that really stuck with me. You can't sail to Mars, obviously. But what if that didn't stop you? I dismiss so many opportunities and dreams because I assume i'm not capable. Maybe you shouldn't let your circumstances dictate what you strive for. If happiness is in the journey, does it matter if you don't reach the destination?
-      </Typography>   
-      <Typography component='p' gutterBottom={true}>
-        Don't have a spaceship, just a boat?...
-      </Typography>
-      <Typography component='p' gutterBottom={true}>
-        Sail to Mars.
-        Cheesy, I know. But I like it.
-      </Typography>
-      </Section>
+      <AboutTheName />
+
     </Layout>
   )
 }
