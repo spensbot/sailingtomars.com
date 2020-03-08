@@ -2,6 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Typography, Paper, Box } from '@material-ui/core';
 import ViewSourceCodeButton from '../basic/viewSourceCodeButton';
+import { navigate } from 'gatsby';
 
 const getStyles = makeStyles(theme => ({
   root:{
@@ -58,13 +59,17 @@ const getStyles = makeStyles(theme => ({
 export default function projectBlock({name, Image, url, hours, coreTechnology, githubUrl, children}) {
   const classes = getStyles();
 
-  const onclick = {
-    
+  const onClick = (e) => {
+    e.preventDefault()
+
+    console.log("Navigate to " + url)
+
+    navigate(url)
   }
 
   return (
     <div className={classes.root}>
-      <div className={classes.header} onclick={`location.href=${url}`}>
+      <div className={classes.header} onClick={onClick}>
         <div className={classes.titleImage}>{Image}</div>
         <div className={classes.title}>
           <Typography variant="h3" component="h3">{name}</Typography>

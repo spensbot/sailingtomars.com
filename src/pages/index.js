@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 import ProjectCategory from '../components/Home/projectCategory'
 import AboutTheName from '../components/Home/AboutTheName'
 import Intro from '../components/Home/Intro'
-import PersonalSpace from '../components/Project Blocks/PersonalSpace'
-import SailingToMars from '../components/Project Blocks/SailingToMars'
+import PersonalSpace from '../components/Home/Project Blocks/PersonalSpace'
+import SailingToMars from '../components/Home/Project Blocks/SailingToMars'
 
 const useStyles = makeStyles( theme => ({
   root: {
