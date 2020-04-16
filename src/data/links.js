@@ -7,6 +7,10 @@ const links = {
     contact: '/contact',
     github: 'https://github.com/spensbot/sailingtomars.com'
   },
+  feelWithMe: {
+    home: 'https://feelwithme.netlify.com/',
+    github: 'https://github.com/spensbot/feelwithme'
+  },
 
   //Game Dev
   personalSpace: {
@@ -17,10 +21,13 @@ const links = {
   },
 
   //Music Software
-  
+  crispy: {
+    home: '/crispy',
+    github: 'https://github.com/spensbot/crispy'
+  },
 
   //Other
-
+  
 
   //Social
   socialMedia: {
@@ -50,7 +57,7 @@ const linksOrdered = {
     {
       category: 'Web Dev',
       links: [
-        // {name: 'Feel With Me', url: '/'},
+        {name: 'Feel With Me', url: links.feelWithMe.home},
         {name: 'Sailing To Mars', url: '/'}
       ]
     },
@@ -64,7 +71,7 @@ const linksOrdered = {
     {
       category: 'Music Software',
       links : [
-        {name: 'Crispy Saturator (Coming Soon!)', url: '/'},
+        {name: 'Crispy', url: links.crispy.home},
         // {name: 'Crispy Synth', url: '/'},
         // {name: 'Lush', url: '/'},
         // {name: 'Lush Verb', url: '/'},

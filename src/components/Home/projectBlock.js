@@ -15,7 +15,7 @@ const getStyles = makeStyles(theme => ({
     overflow: 'hidden',
   },
   header: {
-    height: '35rem',
+    height: '30rem',
     width: '100%',
     position: 'relative',
     cursor: 'pointer'
@@ -72,7 +72,7 @@ export default function projectBlock({name, Image, url, hours, coreTechnology, g
       <div className={classes.header} onClick={onClick}>
         <div className={classes.titleImage}>{Image}</div>
         <div className={classes.title}>
-          <Typography variant="h3" component="h3">{name}</Typography>
+          <Typography variant="h4" component="h3">{name}</Typography>
           <div className={classes.titleInfo}>
             {/* <Typography>{hours} hours</Typography> */}
             <Typography>{coreTechnology}</Typography>

@@ -5,9 +5,9 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "logo/logoOriginal.png" }) {
+      placeholderImage: file(relativePath: { eq: "Feel With Me/logo512nbg.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1024) {
+          fluid(maxWidth: 512) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -23,7 +23,7 @@ export default () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgb(55,55,70)'
+    backgroundColor: 'rgb(200,70,90)'
   }
 
   const imageStyle = {
