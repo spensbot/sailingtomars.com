@@ -96,8 +96,9 @@ const PersonalSpace = () => {
 
   return (
     <Layout seoTitle="Personal Space" usesFooter={true}>
+    <ThemeProvider theme={personalSpaceTheme}>
     <SiteContainer>
-      <ThemeProvider theme={personalSpaceTheme}>
+      
         <div className={classes.root}>
           <ParticleBackground/>
           <div className={classes.reallyBigHeader}>
@@ -182,8 +183,8 @@ const PersonalSpace = () => {
           </div>
 
         </div>
-      </ThemeProvider>
       </SiteContainer>
+      </ThemeProvider>
     </Layout>
   )
 }

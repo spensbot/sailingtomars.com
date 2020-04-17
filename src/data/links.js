@@ -27,7 +27,7 @@ const links = {
   },
 
   //Other
-  
+  music: '/music',
 
   //Social
   socialMedia: {
@@ -81,7 +81,7 @@ const linksOrdered = {
     {
       category: 'Other',
       links : [
-        {name: 'Music (Coming Soon!)', url: '/'},
+        {name: 'Music', url: links.music},
         // {name: '3D Printing', url: '/'},
         // {name: 'Blog', url: }
       ]

@@ -54,8 +54,26 @@ module.exports = {
           },
           {
             family: 'Forum'
+          },
+          {
+            family: 'Montserrat'
+          },
+          {
+            family: 'Yantramanav'
+          },
+          {
+            family: 'Abel'
           }
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Ostrich Sans", "Osctrich Sans Inline"],
+          urls: ["/static/fonts/fonts.css"],
+        },
       },
     },
   ],
