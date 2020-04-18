@@ -34,7 +34,7 @@ export default function AboutTheName() {
           Spenser Saling
         </Typography>
       </Box>
-
+      <Spacer vertical rem='3'/>
       <Box flex="1" minWidth="15rem" pb={3}>
         <ImageMe />
       </Box>

@@ -7,7 +7,7 @@ export default () => {
     query {
       placeholderImage: file(relativePath: { eq: "Personal Space/Project Image.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 1920 quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }

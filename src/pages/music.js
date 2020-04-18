@@ -37,17 +37,13 @@ const useStyles = makeStyles(theme => ({
     height: '50rem'
   },
   raisedText: {
-    //position: 'absolute',
-    // top: '-50vh',
-    // right: 0,
-    // left: 0,
-    color: '#ffffffaa',
+    color: '#ffffffbb',
     position: 'relative',
-    marginTop: '-50vh',
-    paddingBottom: '10rem',
+    marginTop: '-70vh',
+    padding: '0 5% 10rem 5%',
     maxWidth: '40rem',
     margin: 'auto',
-    minHeight: '50vh',
+    minHeight: '70vh',
     textAlign: 'center'
   },
 
@@ -122,7 +118,7 @@ const Music = () => {
                 I thought about if for a while, and responded that I would spend my time creating things: software, games, music, and music videos.
               </Typography>
               <Typography gutterBottom component="h4" variant="h5">
-                Then I realized; That's already how I spend my time.
+                Then I realized; That's how I spend my time now.
               </Typography>
             </div>
 
@@ -130,10 +126,10 @@ const Music = () => {
 
             <iframe width="100%" height="600" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             
-            <LabeledDivider text="I made this music video for my song - Startgazing" />
+            <LabeledDivider text="I made this music video for my song - Stargazing" />
             <FullwidthVid src="https://www.youtube.com/embed/xHt1SIBlqsw" />
 
-            <LabeledDivider text="The 1975's Robbers if one of my favorite songs ever.
+            <LabeledDivider text="The 1975's Robbers is one of my favorite songs ever.
               Eventually, this story developed in my head." />
             <FullwidthVid src="https://www.youtube.com/embed/8eFln_xz5Hc" />
 

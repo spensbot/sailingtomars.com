@@ -14,7 +14,7 @@ export default function Crispy() {
         A Saturation Plugin for Audio Production
       </Typography>
       <Typography gutterBottom>
-        Crispy is primarily a waveshaping plugin that adds harmonics (saturation) to the incoming signal. However, I implemented many additional features that make it more powerful for producers.
+        At it's heart, Crispy is a waveshaping plugin that adds harmonics (saturation) to a signal. However, I implemented many additional features that make it more powerful for producers.
       </Typography>
     </ProjectBlock>
   )
