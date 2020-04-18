@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Ostrich Sans";
+  src: url("static/fonts/OstrichSans-Bold.otf");
+}
+
+@font-face {
+  font-family: "Ostrich Sans Inline";
+  src: url("/static/fonts/OstrichSansInline-Regular.otf");
+}
