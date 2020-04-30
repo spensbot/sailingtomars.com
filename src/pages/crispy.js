@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/styles"
 import ScreenshotFull from '../components/images/Crispy/ScreenshotFull'
 import CrispySection from '../components/crispy/CrispySection'
 import Divider from '../components/basic/divider'
+import {links} from '../data/links'
 
 const crispyTheme = createMuiTheme({
   typography:{
@@ -74,7 +75,8 @@ const Crispy = () => {
               <Typography component="h2" variant="h3" className={classes.subFont}>A powerful saturation plugin for music production</Typography>
               <Typography component="h4" variant="h5">Available in VST3 and AU formats</Typography>
               <Box display="flex" mt="1rem">
-                <Button variant="contained">Mac</Button><Spacer vertical rem="1" /><Button variant="contained">Windows</Button>
+                <Button variant="contained" href={links.crispy.downloads.mac}>Mac</Button><Spacer vertical rem="1" />
+                <Button variant="contained" href={links.crispy.downloads.windows}>Windows</Button>
               </Box>
             </Box>
           </Box>

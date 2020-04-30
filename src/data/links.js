@@ -23,7 +23,11 @@ const links = {
   //Music Software
   crispy: {
     home: '/crispy',
-    github: 'https://github.com/spensbot/crispy'
+    github: 'https://github.com/spensbot/crispy',
+    downloads: {
+      mac: "https://github.com/spensbot/crispy/tree/master/Release%20Builds/Mac%20(64%20bit)",
+      windows: "https://github.com/spensbot/crispy/tree/master/Release%20Builds/Windows%20(64%20bit)"
+    }
   },
 
   //Other
