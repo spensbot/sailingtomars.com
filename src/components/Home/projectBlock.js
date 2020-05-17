@@ -64,7 +64,7 @@ export default function projectBlock({name, Image, url, hours, coreTechnology, g
 
     console.log("Navigate to " + url)
 
-    navigate(url)
+    window.location.href = url
   }
 
   return (

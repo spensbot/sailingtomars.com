@@ -6,8 +6,8 @@ import SiteContainer from '../components/SiteContainer'
 import { makeStyles } from "@material-ui/styles";
 import WaterImage from '../components/images/music/water'
 import MarsImage from '../components/images/music/mars'
-import FullwidthVid from '../components/music/fullwidthVid'
-import LabeledDivider from '../components/music/labeledDivider'
+import FullwidthVid from '../components/basic/fullwidthVid'
+import LabeledDivider from '../components/basic/labeledDivider'
 
 const crispyTheme = createMuiTheme({
   typography:{
@@ -124,10 +124,14 @@ const Music = () => {
 
             <SiteContainer>
 
-            <iframe width="100%" height="600" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="600" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             
             <LabeledDivider text="I made this music video for my song - Stargazing" />
             <FullwidthVid src="https://www.youtube.com/embed/xHt1SIBlqsw" />
+
+            <LabeledDivider text="The 1975's Robbers is one of my favorite songs ever.
+              Here's a piano adaptation I wrote" />
+            <FullwidthVid src="https://www.youtube.com/embed/fGJxCxITUBo" />
 
             <LabeledDivider text="The 1975's Robbers is one of my favorite songs ever.
               Eventually, this story developed in my head." />

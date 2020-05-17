@@ -1,7 +1,7 @@
 import React from 'react'
-import Divider from '../basic/divider'
+import Divider from './divider'
 import { Box, Typography } from '@material-ui/core'
-import Spacer from '../basic/Spacer'
+import Spacer from './Spacer'
 
 export default function labeledDivider({text}) {
   return (
