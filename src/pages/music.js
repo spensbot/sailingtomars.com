@@ -118,13 +118,13 @@ const Music = () => {
                 I thought about if for a while, and responded that I would spend my time creating things: software, games, music, and music videos.
               </Typography>
               <Typography gutterBottom component="h4" variant="h5">
-                Then I realized; That's how I spend my time now.
+                Then I realized; That's already how I spend my time.
               </Typography>
             </div>
 
             <SiteContainer>
 
-            <iframe width="100%" height="600" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             
             <LabeledDivider text="I made this music video for my song - Stargazing" />
             <FullwidthVid src="https://www.youtube.com/embed/xHt1SIBlqsw" />
@@ -133,8 +133,7 @@ const Music = () => {
               Here's a piano adaptation I wrote" />
             <FullwidthVid src="https://www.youtube.com/embed/fGJxCxITUBo" />
 
-            <LabeledDivider text="The 1975's Robbers is one of my favorite songs ever.
-              Eventually, this story developed in my head." />
+            <LabeledDivider text="I've been kinda obsessed with Robbers, so I also developed this Music video screenplay for the song." />
             <FullwidthVid src="https://www.youtube.com/embed/8eFln_xz5Hc" />
 
             </SiteContainer>

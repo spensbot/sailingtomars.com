@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const CrispySection = ({imageUrl, header, content, color}) => {
+const CrispySection = ({src, header, content, color}) => {
 
   const classes = useStyles();
 
@@ -60,7 +60,7 @@ const CrispySection = ({imageUrl, header, content, color}) => {
 
   const image = (
     <div className={classes.image}>
-      <img style={{objectFit: "contain"}} width="100%" height="100%" src={imageUrl} />
+      <img style={{objectFit: "contain"}} width="100%" height="100%" src={src} />
     </div>
   )
 

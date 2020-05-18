@@ -8,6 +8,13 @@ import ScreenshotFull from '../components/images/Crispy/ScreenshotFull'
 import CrispySection from '../components/crispy/CrispySection'
 import Divider from '../components/basic/divider'
 import {links} from '../data/links'
+import imageAutoGain from '../images/Crispy/auto-gain.png'
+import imageBypass from '../images/Crispy/bypass.png'
+import imageDryWet from '../images/Crispy/drywet.png'
+import imageEven from '../images/Crispy/even.png'
+import imageHighLow from '../images/Crispy/highlow.png'
+import imageOdd from '../images/Crispy/odd.png'
+import imageOversampling from '../images/Crispy/oversampling.png'
 
 const crispyTheme = createMuiTheme({
   typography:{
@@ -94,17 +101,17 @@ const Crispy = () => {
           The 'Saturation Visualizer' behind this knob demonstrates the effect the
           saturation algorithm has on a sin wave with a gain of 0 dB. Real-world audio, which is made up of many sin waves,
           will behave differently when saturated."
-        imageUrl="/static/images/odd.png"
+        src={imageOdd}
       />
       <CrispySection color="#6666cc" header="Even Saturation Mix"
         content="Adds even harmonics to a signal. This slider is intended to change the color of saturation.
         It should be used in combination to the odd saturation knob."
-        imageUrl="/static/images/even.png"
+        src={imageEven}
       />
       <CrispySection header="High/Low Pass Filters"
         content="These High and Low Pass knobs filter the signal before the saturator.
         This allows you to target and saturate a specific frequency range. In this way, Crispy can act like a harmonic exciter."
-        imageUrl="/static/images/highlow.png"
+        src={imageHighLow}
       />
       <CrispySection color="hsl(330, 80%, 50%)" header="Oversampling"
         content="Oversampling is important to reduce/remove aliasing when dealing with heavy saturation and/or high frequencies. 
@@ -114,24 +121,24 @@ const Crispy = () => {
         2x - 4x oversampling is often enough to remove audible artifacts, and is recommended in most cases.
         High oversampling rates should only be used when necessary. A 44.1kHz signal, 
         oversampled 16x requires the algorithm to process over 705,000 samples per second!"
-        imageUrl="/static/images/oversampling.png"
+        src={imageOversampling}
       />
       <CrispySection header="Dry/Wet Mix"
         content="A Standard Dry/Wet Mix. This allows you to mix the processed (wet) and unprocessed (dry) signal." 
-        imageUrl="/static/images/drywet.png"
+        src={imageDryWet}
       />
       <CrispySection color="#ff4444" header="Matched Bypass"
         content="Bypasses the plugin, while adding gain to match the RMS volume of the current dry/wet mix.
         Saturation adds volume to a signal, so most saturation plugins sound better when bypassed simply because the sound is louder.
         This feature is incredibly helpful. It allows you to hear how Crispy is changing your sound without volume bias."
-        imageUrl="/static/images/bypass.png"
+        src={imageBypass}
       />
       <CrispySection header="Auto-Gain"
         content="Adds gain to provide the saturation algorithm with an ideal signal level.
         When fed a quiet signal, crispy mostly just adds volume.
         Auto-Gain allows the full dynamic range of the mix to be saturated more evenly.
         Added gain is removed after saturation. The end result is similar to compression."
-        imageUrl="/static/images/auto-gain.png"
+        src={imageAutoGain}
       />
 
 

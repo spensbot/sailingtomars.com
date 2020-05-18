@@ -12,8 +12,16 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
+      }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown`,
+        name: `markdown`,
+      }
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -34,36 +42,16 @@ module.exports = {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Oswald`,
-          },
-          {
-            family: `Open Sans`,
-          },
-          {
-            family: 'Roboto'
-          },
-          {
-            family: 'Raleway'
-          },
-          {
-            family: 'Amatic SC'
-          },
-          {
-            family: 'Poiret One'
-          },
-          {
-            family: 'Forum'
-          },
-          {
-            family: 'Montserrat'
-          },
-          {
-            family: 'Yantramanav'
-          },
-          {
-            family: 'Abel'
-          }
+          { family: `Oswald` },
+          { family: `Open Sans` },
+          { family: 'Roboto' },
+          { family: 'Raleway' },
+          { family: 'Amatic SC' },
+          { family: 'Poiret One' },
+          { family: 'Forum' },
+          { family: 'Montserrat' },
+          { family: 'Yantramanav' },
+          { family: 'Abel' }
         ],
       },
     },
@@ -72,7 +60,7 @@ module.exports = {
       options: {
         custom: {
           families: ["Ostrich Sans", "Osctrich Sans Inline"],
-          urls: ["/static/fonts/fonts.css"],
+          urls: ["/fonts/fonts.css"],
         },
       },
     },
