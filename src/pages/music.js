@@ -126,15 +126,18 @@ const Music = () => {
 
             <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             
-            <LabeledDivider text="I made this music video for my song - Stargazing" />
-            <FullwidthVid src="https://www.youtube.com/embed/xHt1SIBlqsw" />
+            <LabeledDivider text="I performed my song 'Stargazing' for an Apple of His Eye charity event" />
+            <FullwidthVid src="https://www.youtube.com/embed/aKo-q7t5wzg" />
+
+            <LabeledDivider text="A collage of slow-mo videos taken in Spain, Portugal, Panama, and Columbia. Set to a short, original song called Never." />
+            <FullwidthVid src="https://www.youtube.com/embed/dfw6rv2vtao" />
 
             <LabeledDivider text="The 1975's Robbers is one of my favorite songs ever.
               Here's a piano adaptation I wrote" />
             <FullwidthVid src="https://www.youtube.com/embed/fGJxCxITUBo" />
 
-            <LabeledDivider text="A collage of slow-mo videos taken in Spain, Portugal, Panama, and Columbia. Set to a short, original song called Never." />
-            <FullwidthVid src="https://www.youtube.com/embed/dfw6rv2vtao" />
+            <LabeledDivider text="I made this music video for my song - Stargazing" />
+            <FullwidthVid src="https://www.youtube.com/embed/xHt1SIBlqsw" />
 
             <LabeledDivider text="I've been kinda obsessed with Robbers, so I also developed this Music video screenplay for the song." />
             <FullwidthVid src="https://www.youtube.com/embed/8eFln_xz5Hc" />
