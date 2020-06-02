@@ -13,7 +13,7 @@ export default function contact() {
       <Typography>Spenser Saling</Typography>
       <Typography>+1 (503) 853 5767</Typography>
       <Typography>Gresham, OR USA</Typography>
-      <Typography gutterButtom>spenser0saling@gmail.com</Typography>
+      <Typography gutterBottom>spenser0saling@gmail.com</Typography>
       <Spacer />
       <Typography variant="h5" component="h1" gutterBottom>If you are interested in working together, let me know!</Typography>
       <Spacer />

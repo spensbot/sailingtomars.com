@@ -19,6 +19,14 @@ const links = {
     googlePlay: '/',
     github: 'https://github.com/spensbot/Personal-Space'
   },
+  theRestOfUs: {
+    home: '/the-rest-of-us',
+    github: 'https://github.com/spensbot/The-Rest-of-Us'
+  },
+  particleSystemDesigner: {
+    home: '/particle-system-designer',
+    github: 'https://github.com/spensbot/Particle-System-Designer'
+  },
 
   //Music Software
   crispy: {
@@ -28,6 +36,14 @@ const links = {
       mac: "https://github.com/spensbot/crispy/tree/master/Release%20Builds/Mac%20(64%20bit)",
       windows: "https://github.com/spensbot/crispy/tree/master/Release%20Builds/Windows%20(64%20bit)"
     }
+  },
+  lushDelay: {
+    home: '/lush-delay',
+    github: 'https://github.com/spensbot/Lush-Delay'
+  },
+  garageLights: {
+    home: '/garage-lights',
+    github: 'https://github.com/spensbot/Garage-Lights'
   },
 
   //Other
@@ -62,24 +78,23 @@ const linksOrdered = {
       category: 'Web Dev',
       links: [
         {name: 'Feel With Me', url: links.feelWithMe.home},
-        {name: 'Sailing To Mars', url: '/'}
+        {name: 'Sailing To Mars', url: '/'},
       ]
     },
     {
       category: 'Game Dev',
       links : [
-        // {name: 'SadBoy', url: '/'},
-        {name: 'Personal Space', url: links.personalSpace.home}
+        {name: 'Personal Space', url: links.personalSpace.home},
+        {name: 'The Rest of Us', url: links.theRestOfUs.home},
+        {name: 'Particle System Designer', url: links.particleSystemDesigner.home},
       ]
     },
     {
       category: 'Music Software',
       links : [
+        //{name: 'Lush Delay', url: links.lushDelay.home},
         {name: 'Crispy', url: links.crispy.home},
-        // {name: 'Crispy Synth', url: '/'},
-        // {name: 'Lush', url: '/'},
-        // {name: 'Lush Verb', url: '/'},
-        // {name: 'Garage Lights', url: '/'}
+        {name: 'Garage Lights', url: links.garageLights.home}
       ]
     },
     {
