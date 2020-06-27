@@ -92,7 +92,7 @@ const linksOrdered = {
     {
       category: 'Music Software',
       links : [
-        //{name: 'Lush Delay', url: links.lushDelay.home},
+        {name: 'Lush Delay', url: links.lushDelay.home},
         {name: 'Crispy', url: links.crispy.home},
         {name: 'Garage Lights', url: links.garageLights.home}
       ]

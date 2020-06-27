@@ -15,6 +15,7 @@ import imageEven from '../images/Crispy/even.png'
 import imageHighLow from '../images/Crispy/highlow.png'
 import imageOdd from '../images/Crispy/odd.png'
 import imageOversampling from '../images/Crispy/oversampling.png'
+import ViewSourceCodeButton from '../components/basic/viewSourceCodeButton'
 
 const crispyTheme = createMuiTheme({
   typography:{
@@ -52,8 +53,9 @@ const useStyles = makeStyles(theme => ({
     color: '#eee'
   },
   headerImage: {
-    width: '50rem',
-    height: '50rem'
+    boxShadow: "0px 6px 25px 0px rgba(0,0,0,0.8)",
+    WebkitBoxShadow: "0px 6px 25px 0px rgba(0,0,0,0.8)",
+    MozBoxShadow: "0px 6px 25px 0px rgba(0,0,0,0.8)"
   },
   features: {
     textAlign: 'center',
@@ -75,8 +77,8 @@ const Crispy = () => {
         <SiteContainer>
         <Box display="flex">
           <Box display="flex" flexDirection="row" flexWrap='wrap' alignItems='top' justifyContent='left' marginX='-3%'>
-            <Box flexGrow='1' marginBottom='3rem' width="40%" minWidth="15rem" marginX='3%'>
-              <ScreenshotFull className={classes.headerImage}/>
+            <Box flexGrow='1' marginBottom='3rem' width="40%" minWidth="15rem" marginX='3%' className={classes.headerImage}>
+              <ScreenshotFull />
             </Box>
             <Box flexGrow='1' width='40%' minWidth="15rem" marginX='3%' marginBottom="3rem">
               <Typography component="h2" variant="h3" className={classes.subFont}>A powerful saturation plugin for music production</Typography>
@@ -85,6 +87,8 @@ const Crispy = () => {
                 <Button variant="contained" href={links.crispy.downloads.mac}>Mac</Button><Spacer vertical rem="1" />
                 <Button variant="contained" href={links.crispy.downloads.windows}>Windows</Button>
               </Box>
+              <Spacer rem={1}/>
+              <ViewSourceCodeButton />
             </Box>
           </Box>
         </Box>
