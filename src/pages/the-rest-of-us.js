@@ -3,7 +3,6 @@ import Layout from '../components/layout'
 import { Typography, Box } from '@material-ui/core'
 import Spacer from '../components/basic/Spacer'
 import SiteContainer from '../components/SiteContainer'
-import gif from '../images/Garage Lights/screenshot.gif'
 import ViewSourceCodeButton from '../components/basic/viewSourceCodeButton'
 import screenshot from '../images/The Rest of Us/The-Rest-of-Us-Short.gif'
 import {links} from '../data/links'
@@ -29,7 +28,7 @@ export default function contact() {
 
       <Box width="100%" display="flex" justifyContent="center">
         <div style={imageWrapper}>
-          <img width="100%" src={screenshot} />
+          <img width="100%" src={screenshot} alt="The Rest of Us Gameplay Screenshot"/>
         </div>
       </Box>
 

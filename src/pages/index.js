@@ -1,6 +1,4 @@
 import React from "react"
-import { makeStyles } from '@material-ui/core/styles'
-
 import Layout from "../components/layout"
 import ProjectCategory from '../components/Home/projectCategory'
 import AboutTheName from '../components/Home/AboutTheName'
@@ -15,19 +13,7 @@ import ParticleSystemDesigner from '../components/Home/Project Blocks/ParticleSy
 import Spacer from '../components/basic/Spacer'
 import LushDelay from "../components/Home/Project Blocks/LushDelay"
 
-const useStyles = makeStyles( theme => ({
-  root: {
-    
-  },
-  arrow: {
-    width: '7rem',
-    height: '7rem'
-  }
-}));
-
 const IndexPage = () => {
-
-  const classes = useStyles();
 
   return (
     <Layout seoTitle="Home" usesHeader usesFooter>

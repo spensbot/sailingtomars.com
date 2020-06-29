@@ -23,7 +23,7 @@ const FullwidthVid= ({src}) => {
 
   return (
     <div className={classes.fullwidthVidContainer}>
-      <iframe className={classes.fullwidthVid} src={src} allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe title="FullWidth YouTube Video" className={classes.fullwidthVid} src={src} allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   )
 }

@@ -27,7 +27,7 @@ export default function contact() {
 
       <Box width="100%" display="flex" justifyContent="center">
         <div style={imageWrapper}>
-          <img width="100%" src={screenshot} />
+          <img width="100%" src={screenshot} alt="Particle System Designer Screenshot"/>
         </div>
       </Box>
       

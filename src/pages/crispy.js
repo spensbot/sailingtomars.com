@@ -88,7 +88,7 @@ const Crispy = () => {
                 <Button variant="contained" href={links.crispy.downloads.windows}>Windows</Button>
               </Box>
               <Spacer rem={1}/>
-              <ViewSourceCodeButton />
+              <ViewSourceCodeButton url={links.crispy.github}/>
             </Box>
           </Box>
         </Box>

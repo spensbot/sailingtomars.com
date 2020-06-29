@@ -19,7 +19,7 @@ export default function googlePlayStoreButton({link, isAndroid}) {
   }
 
   return (
-    <div onClick={e => openNewWindow(e)} style={style}>
+    <div role="button" tabIndex={0} onKeyDown={openNewWindow} onClick={openNewWindow} style={style}>
       {isAndroid ?
         <PlayStoreBadge /> :
         <IosStoreBadge />

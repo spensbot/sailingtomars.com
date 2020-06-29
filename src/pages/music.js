@@ -124,7 +124,7 @@ const Music = () => {
 
             <SiteContainer>
 
-            <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe title="SoundCloud Player" width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             
             <LabeledDivider text="I performed my song 'Stargazing' for an Apple of His Eye charity event" />
             <FullwidthVid src="https://www.youtube.com/embed/aKo-q7t5wzg" />

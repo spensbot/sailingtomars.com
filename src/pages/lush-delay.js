@@ -5,16 +5,8 @@ import Spacer from '../components/basic/Spacer'
 import SiteContainer from '../components/SiteContainer'
 import { makeStyles } from "@material-ui/styles"
 import ScreenshotFull from '../images/Lush Delay/Screenshot.jpg'
-import CrispySection from '../components/crispy/CrispySection'
 import Divider from '../components/basic/divider'
 import {links} from '../data/links'
-import imageAutoGain from '../images/Crispy/auto-gain.png'
-import imageBypass from '../images/Crispy/bypass.png'
-import imageDryWet from '../images/Crispy/drywet.png'
-import imageEven from '../images/Crispy/even.png'
-import imageHighLow from '../images/Crispy/highlow.png'
-import imageOdd from '../images/Crispy/odd.png'
-import imageOversampling from '../images/Crispy/oversampling.png'
 import ViewSourceCodeButton from '../components/basic/viewSourceCodeButton'
 
 const crispyTheme = createMuiTheme({
@@ -22,15 +14,6 @@ const crispyTheme = createMuiTheme({
     fontFamily: ' "Montserrat", "Helvetica", "Arial", sans-serif ',
   }
 })
-
-const colors = {
-  orange: '#ff4444',
-  green: 'hsl(100, 50%, 50%)',
-  blue: '#6666cc',
-  pink: 'hsl(330, 80%, 50%)',
-  lightGrey: '#aaa',
-  darkGrey: '#333'
-}
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -79,7 +62,7 @@ const Crispy = () => {
         <Box display="flex">
           <Box display="flex" flexDirection="row" flexWrap='wrap' alignItems='top' justifyContent='left' marginX='-3%'>
             <Box flexGrow='1' marginBottom='3rem' width="40%" minWidth="15rem" marginX='3%'>
-              <img className={classes.headerImage} src={ScreenshotFull}/>
+              <img className={classes.headerImage} src={ScreenshotFull} alt="Lush Delay Screenshot"/>
             </Box>
             <Box flexGrow='1' width='40%' minWidth="15rem" marginX='3%' marginBottom="3rem">
               <Typography component="h2" variant="h3" className={classes.subFont}>A Delay Plugin with lots of Versatility</Typography>
@@ -90,7 +73,7 @@ const Crispy = () => {
                 <Button variant="contained" href={links.crispy.downloads.windows} disabled>Windows</Button>
               </Box>
               <Spacer rem={1} />
-              <ViewSourceCodeButton />
+              <ViewSourceCodeButton url={links.lushDelay.github}/>
             </Box>
           </Box>
         </Box>

@@ -1,24 +1,7 @@
 import React from 'react'
-import { Typography, Box } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 import SiteContainer from '../SiteContainer'
 import { makeStyles } from "@material-ui/styles"
-
-const colorsById = {
-  orange: '#ff4444',
-  green: 'hsl(100, 50%, 50%)',
-  blue: '#6666cc',
-  pink: 'hsl(330, 80%, 50%)',
-  lightGrey: '#aaa',
-  darkGrey: '#333'
-}
-
-const colors = [
-  colorsById.orange,
-  colorsById.green,
-  colorsById.blue,
-  colorsById.pink,
-  colorsById.lightGrey,
-]
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -60,7 +43,7 @@ const CrispySection = ({src, header, content, color}) => {
 
   const image = (
     <div className={classes.image}>
-      <img style={{objectFit: "contain"}} width="100%" height="100%" src={src} />
+      <img style={{objectFit: "contain"}} width="100%" height="100%" src={src} alt="Crispy Plugin Project"/>
     </div>
   )
 

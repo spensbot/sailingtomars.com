@@ -48,7 +48,7 @@ const Header = ({ siteTitle }) => {
             <Typography component="h3" variant="h2">
               <Link className={classes.titleLink} href="/">Sailing To Mars</Link>
             </Typography>
-            <Typography component="sub" className={classes.subTitle}>A Portfolio Site For Spenser Saling / <a className={classes.subTitle} href={links.sailingToMars.contact}>Contact</a> / <a className={classes.subTitle} href={links.sailingToMars.resume}>Resume</a></Typography>
+            <Typography component="sub" className={classes.subTitle }>A Portfolio Site For Spenser Saling / <a className={classes.subTitle} href={links.sailingToMars.contact}>Contact</a> / <a className={classes.subTitle} href={links.sailingToMars.resume}>Resume</a></Typography>
           </Box>
           <Box flex="1" display="flex" justifyContent="center">
             <div className={classes.logo}>

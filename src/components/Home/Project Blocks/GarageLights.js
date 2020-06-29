@@ -7,7 +7,7 @@ import projectImage from '../../../images/Garage Lights/hollywoodHouse.jpg'
 export default function GarageLights() {
 
   const ProjectImage = (
-    <img style={{width: '100%', height: '100%', objectFit: 'cover'}} src={projectImage} />
+    <img style={{width: '100%', height: '100%', objectFit: 'cover'}} src={projectImage} alt="Garage Lights" />
   )
 
   return (

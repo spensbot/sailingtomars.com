@@ -7,7 +7,7 @@ import projectImage from '../../../images/Particle System Designer/screenshot2.p
 export default function ParticleSystemDesigner() {
 
   const ProjectImage = (
-    <img style={{width: '100%', height: '100%', objectFit: 'cover'}} src={projectImage} />
+    <img style={{width: '100%', height: '100%', objectFit: 'cover'}} src={projectImage} alt="Particle System Designer" />
   )
 
   return (

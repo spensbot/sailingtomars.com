@@ -22,7 +22,7 @@ export default () => {
 
   const projectImage = (
   <div style={containerStyle}>
-    <img src={ProjectImage} style={imageStyle}/>
+    <img src={ProjectImage} style={imageStyle} alt="Lush Delay"/>
   </div>
   )
 

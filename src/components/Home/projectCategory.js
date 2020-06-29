@@ -6,7 +6,6 @@ import Spacer from '../basic/Spacer';
 
 const getStyles = makeStyles(theme => ({
   root:{
-    background: 'rgb(61,101,161)',
     background: `linear-gradient(180deg, ${theme.palette.background.default} 0%, rgba(200, 200, 200, 1) 100%)`,
     padding: '5rem 0',
     width: '100%'

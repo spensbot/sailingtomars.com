@@ -1,8 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { Typography, Paper, Box } from '@material-ui/core';
-import ViewSourceCodeButton from '../basic/viewSourceCodeButton';
-import { navigate } from 'gatsby';
+import { Typography } from '@material-ui/core'
+import ViewSourceCodeButton from '../basic/viewSourceCodeButton'
 
 const getStyles = makeStyles(theme => ({
   root:{
@@ -56,7 +55,7 @@ const getStyles = makeStyles(theme => ({
   }
 }))
 
-export default function projectBlock({name, Image, url, hours, coreTechnology, githubUrl, children}) {
+export default function projectBlock({name, Image, url, coreTechnology, githubUrl, children}) {
   const classes = getStyles();
 
   const onClick = (e) => {
@@ -69,7 +68,7 @@ export default function projectBlock({name, Image, url, hours, coreTechnology, g
 
   return (
     <div className={classes.root}>
-      <div className={classes.header} onClick={onClick}>
+      <div className={classes.header} role="button" tabIndex={0} onKeyDown={onClick} onClick={onClick}>
         <div className={classes.titleImage}>{Image}</div>
         <div className={classes.title}>
           <Typography variant="h4" component="h3">{name}</Typography>

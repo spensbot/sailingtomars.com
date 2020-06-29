@@ -7,7 +7,7 @@ import projectImage from '../../../images/The Rest of Us/The-Rest-of-Us-Short.gi
 export default function TheRestOfUs() {
 
   const ProjectImage = (
-    <img style={{width: '100%', height: '100%', objectFit: 'cover'}} src={projectImage} />
+    <img style={{width: '100%', height: '100%', objectFit: 'cover'}} src={projectImage} alt="The Rest of Us Project" />
   )
 
   return (

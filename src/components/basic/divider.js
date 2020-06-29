@@ -1,5 +1,4 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
 
 export default function divider({vertical, color, thickness, marginX, marginY}) {
   const Color = color || '#ffffff'
