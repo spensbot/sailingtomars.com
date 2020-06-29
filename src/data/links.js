@@ -3,7 +3,7 @@ const links = {
   //Web Dev
   sailingToMars: {
     home: '/',
-    resume: '/resume',
+    resume: '/resume.pdf',
     contact: '/contact',
     github: 'https://github.com/spensbot/sailingtomars.com'
   },
