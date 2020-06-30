@@ -22,7 +22,7 @@ export default function footerList( {title, links} ) {
     <Box minWidth="8rem" display="flex" flexDirection="column" alignItems="flex-start" flex="1" margin="0rem .5rem 2rem .5rem">
       <Typography variant='h6' className={classes.heading}>{title}</Typography>
       {links.map(link => (
-        <Link href={link.url} className={classes.link}>{link.name}</Link>
+        <Link key={link.name} href={link.url} className={classes.link}>{link.name}</Link>
       ))}
     </Box>
   )

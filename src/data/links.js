@@ -1,9 +1,12 @@
 // ALL HARD CODED LINKS GO HERE
 const links = {
+  index: 'https://sailingtomars.com',
+  
   //Web Dev
   sailingToMars: {
     home: '/',
-    resume: '/resume.pdf',
+    resume: '/resume',
+    resumePDF: '/resume.pdf',
     contact: '/contact',
     github: 'https://github.com/spensbot/sailingtomars.com'
   },
