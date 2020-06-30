@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   fullwidthContainer: {
     position: 'relative',
     width: '100%',
-    paddingBottom: '140%'
+    paddingBottom: '130%'
   },
   fullwidth: {
     position: 'absolute',
@@ -32,14 +32,19 @@ export default function Contact() {
       <Spacer />
       <Typography variant="h3" component="h1" gutterBottom>Resume*</Typography>
       <Typography>*Note: This is a generic resume. If I applied for a job with you, please refer to the scoped resume sent with my application.</Typography>
-      <div className={classes.fullwidthContainer}>
+      {/* <div className={classes.fullwidthContainer}>
         <embed className={classes.fullwidth} src={links.sailingToMars.resumePDF} />
       </div>
-      <Spacer />
+      <Spacer /> */}
       {/* <div className={classes.fullwidthContainer}>
         <iframe title="PDF Resume Viewer" className={classes.fullwidth} src={`https://docs.google.com/gview?url=${links.index}${links.sailingToMars.resumePDF}?pid=explorer&efh=false&a=v&chrome=false&embedded=true"`} frameBorder="0"></iframe>
       </div>
       <Spacer /> */}
+      <div className={classes.fullwidthContainer}>
+        <iframe title="Resume PDF Viewer" className={classes.fullwidth} src={`${links.index}${links.sailingToMars.resumePDF}`} frameBorder={0}>
+        </iframe>
+      </div>
+      <Spacer />
       </SiteContainer>
     </Layout>
   )
