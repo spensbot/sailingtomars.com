@@ -11,7 +11,7 @@ const links = {
     github: 'https://github.com/spensbot/sailingtomars.com'
   },
   feelWithMe: {
-    home: 'https://feelwithme.netlify.com/',
+    home: 'https://feelwithme.net',
     github: 'https://github.com/spensbot/feelwithme'
   },
 
