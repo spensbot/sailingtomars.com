@@ -6,7 +6,7 @@ const links = {
   sailingToMars: {
     home: '/',
     resume: '/resume',
-    resumePDF: '/resume.pdf',
+    resumePDF: '/resume2.pdf',
     contact: '/contact',
     github: 'https://github.com/spensbot/sailingtomars.com'
   },
