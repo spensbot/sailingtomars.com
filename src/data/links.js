@@ -14,6 +14,10 @@ const links = {
     home: 'https://feelwithme.net',
     github: 'https://github.com/spensbot/feelwithme'
   },
+  solitaire: {
+    home: 'https://react-solitaire.netlify.app/',
+    github: 'https://github.com/spensbot/react-solitaire'
+  },
 
   //Game Dev
   personalSpace: {

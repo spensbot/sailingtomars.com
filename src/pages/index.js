@@ -12,6 +12,7 @@ import TheRestOfUs from '../components/Home/Project Blocks/TheRestOfUs'
 import ParticleSystemDesigner from '../components/Home/Project Blocks/ParticleSystemDesigner'
 import Spacer from '../components/basic/Spacer'
 import LushDelay from "../components/Home/Project Blocks/LushDelay"
+import Solitaire from '../components/Home/Project Blocks/Solitaire'
 
 const IndexPage = () => {
 
@@ -24,7 +25,8 @@ const IndexPage = () => {
         <FeelWithMe />
         <Spacer />
         <SailingToMars />
-
+        <Spacer />
+        <Solitaire />
       </ProjectCategory>
 
       <ProjectCategory name="Game Development" description="I love game development because of it's variety. When working on a game, I get to design graphics, music, sound, and program structure. Games also have a deeply object-oriented nature that makes them incredibly satisfying to work with.">
