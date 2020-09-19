@@ -69,7 +69,7 @@ const links = {
 
 
 // NO HARD CODED LINKS HERE.
-//THIS IS WHERE LINKS CAN BE GROUPED/ORDERED FOR USE IN THE SITE
+// THIS IS WHERE LINKS CAN BE GROUPED/ORDERED FOR USE IN THE SITE
 const linksOrdered = {
 //-----------------     FOOTER LINKS     ---------------
   byCategory: [
@@ -86,6 +86,7 @@ const linksOrdered = {
       links: [
         {name: 'Feel With Me', url: links.feelWithMe.home},
         {name: 'Sailing To Mars', url: '/'},
+        {name: 'Solitaire', url: links.solitaire.home}
       ]
     },
     {
