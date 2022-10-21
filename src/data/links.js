@@ -1,6 +1,23 @@
 // ALL HARD CODED LINKS GO HERE
 const links = {
   index: 'https://sailingtomars.com',
+
+  //Music, Lighting, and Visuals,
+  captivate: {
+    home: 'https://captivatesynth.com',
+    github: 'https://github.com/spensbot/captivate'
+  },
+  djing: {
+    home: '/dj'
+  },
+
+  //Mechanical Engineering
+  vibePan: {
+    home: '/vibe-pan'
+  },
+  fdmPrinting: {
+    home: '/3d-printing'
+  },
   
   //Web Dev
   sailingToMars: {

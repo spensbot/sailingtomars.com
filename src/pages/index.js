@@ -12,6 +12,10 @@ import TheRestOfUs from '../components/Home/Project Blocks/TheRestOfUs'
 import ParticleSystemDesigner from '../components/Home/Project Blocks/ParticleSystemDesigner'
 import Spacer from '../components/basic/Spacer'
 import LushDelay from "../components/Home/Project Blocks/LushDelay"
+import Captivate from '../components/Home/Project Blocks/Captivate'
+import Djing from '../components/Home/Project Blocks/Djing'
+import FdmPrinting from '../components/Home/Project Blocks/FdmPrinting'
+import VibePan from '../components/Home/Project Blocks/VibePan'
 import Solitaire from '../components/Home/Project Blocks/Solitaire'
 
 const IndexPage = () => {
@@ -21,12 +25,24 @@ const IndexPage = () => {
 
       <Intro />
 
+      <ProjectCategory name="Music, Lighting, and Visuals" description="I have always been obsessed with the feeling of awe and energy that the perfect event creates. No matter what interest I explore, it always ties back to this.">
+        <Captivate />
+        <Spacer />
+        <Djing />
+      </ProjectCategory>
+
+      <ProjectCategory name="Mechanical Engineering" description="My foundation in mechanical engineering empowers me to bring my ideas to the real world. I regularly utilize 3D-modeling & printing, electrical system design, structural analysis, and more.">
+        <VibePan />
+        <Spacer />
+        <FdmPrinting />
+      </ProjectCategory>
+
       <ProjectCategory name="Web Development" description="I love web development because of it's wide range of applications. Javascript is an incredible, unique language, shaped by the asynchronous nature of the web. Using technologies like Node, Electron, and React, I can create cross-platform desktop, mobile, and web apps.">
         <FeelWithMe />
         <Spacer />
         <SailingToMars />
-        <Spacer />
-        <Solitaire />
+        {/* <Spacer />
+        <Solitaire /> */}
       </ProjectCategory>
 
       <ProjectCategory name="Game Development" description="I love game development because of it's variety. When working on a game, I get to design graphics, music, sound, and program structure. Games also have a deeply object-oriented nature that makes them incredibly satisfying to work with.">

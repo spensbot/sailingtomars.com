@@ -1,6 +1,6 @@
 ---
 path: "/resume"
-date: "2019-05-04"
+date: "2022-10-20"
 title: "Resume"
 ---
 
@@ -11,21 +11,31 @@ title: "Resume"
 ---
 
 ### Skills
-- Programming (3000+ hours) in C++, Javascript, C#, Python, Swift, CSS, HTML, Lua, Matlab, and many more
-> - Back-end Web Development (500+ hours) with Node JS, Django, MongoDB, SQL, GraphQL and more
-> - Front-end Web Development (1000+ hours) with React, Gatsby, Apollo GraphQL, Redux, Vanilla JS, and more
-> - Game Development (500+ hours) with Unity and C# 
+- Programming (10000+ hours) in C++, Javascript, C#, Python, Swift, CSS, HTML, Lua, Matlab, and many more
+> - Back-end Web Development (1000+ hours) with Node JS, Django, MongoDB, SQL, GraphQL and more
+> - Front-end Web Development (3000+ hours) with Typescript, React, Redux, and more
+> - Game Development (5000+ hours) with C++, Rust, Objective-C, Java, Python, and more 
 > - Audio Application Development and DSP (1000+ hours) with Juce and C++
 - Spanish (2000+ hours) | I can hold a conversation, read native spanish literature, and understand native spanish audio
 - 3D CAD Design (4000+ hours)
 - 3D Printing (500+ hours)
 - Music Recording/Mixing (1000+ hours) in Logic Pro X, Ableton, and Acoustica Mixcraft
+- Graphic Design (500+ hours) in Affinity Designer, Affinity Photo.
+- Video Editing (100+ hours) in DaVinci Resolve
 - Pianist, Guitarist, and Vocalist (4000+ hours) with a mixture of formal and self training
-- Proficient in Microsoft Excel, Word, PowerPoint, and Visio
+- Proficient in productivity and project management tools. Microsoft, Google, etc.
 
 ---
 
 ### Experience
+
+#### Brainium Studios | Portland, OR, USA -- *Sr. Software Engineer*
+AUGUST 2020 - PRESENT
+- Lead the design and development of an in-house tool for displaying remotely-configured messages and ads to mobile game users. The service has delivered hundreds of millions of messages to users.
+- Coordinate with multiple stakeholders in the company to design a product to meet everyone's needs.
+- Develop app-side code in C++ and Rust.
+- Develop a tool for designing messages in Typescript, React, and Electron.
+
 #### Bulk Handling Systems | Eugene, OR, USA -- *Sales Engineer*
 JUNE 2015 - JULY 2019
 - Designed turnkey recycling facilities.
@@ -62,6 +72,6 @@ SEPTEMBER 2010 - MAY 2015
 
 ### Hobbies
 - Working on personal programming or design projects.
-- Playing, Writing, Recording, and Producing Music from a wide variety of Genres.
+- Playing, Writing, Recording, and Producing Music in a variety of Genres.
 - Travelling and learning foreign language/culture.
 - Live music, running, long-boarding, dancing, video games, disc golf, volleyball, open mics, busking, basketball.
