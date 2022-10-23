@@ -12,14 +12,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/markdown`,
         name: `markdown`,
-      }
+      },
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
@@ -36,25 +36,8 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
     `gatsby-plugin-material-ui`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          { family: `Oswald` },
-          { family: `Open Sans` },
-          { family: 'Roboto' },
-          { family: 'Raleway' },
-          { family: 'Amatic SC' },
-          { family: 'Poiret One' },
-          { family: 'Forum' },
-          { family: 'Montserrat' },
-          { family: 'Yantramanav' },
-          { family: 'Abel' }
-        ],
-      },
-    },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
