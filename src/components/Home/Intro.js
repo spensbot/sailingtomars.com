@@ -39,9 +39,9 @@ export default function AboutTheName() {
           </Typography>
           <Typography component="p" gutterBottom>
             I stumbled upon a personal cirriculum I like to call project-based
-            learning. First, pick something you want to create. Then, learn
-            whatever you need to make it happen. As a result, I've created a few
-            cool things.
+            learning. First, I find something I want to create. Then, I learn
+            whatever is necessary to make it happen. As a result, I've created a
+            few cool things.
           </Typography>
           <Typography component="h6" variant="h6" gutterBottom>
             This site showcases the projects I am most proud of.

@@ -99,12 +99,14 @@ const linksOrdered = {
       ],
     },
     {
-      category: "Music Dev",
+      category: "Software",
       links: [
         { name: "Captivate", url: links.captivate.home },
-        { name: "Wedding DJing", url: links.djing.home },
+        { name: "Feel With Me", url: links.feelWithMe.home },
         { name: "Lush Delay", url: links.lushDelay.home },
         { name: "Crispy", url: links.crispy.home },
+        // { name: "Sailing To Mars", url: "/" },
+        // { name: "Solitaire", url: links.solitaire.home },
         // { name: "Garage Lights", url: links.garageLights.home },
       ],
     },
@@ -127,19 +129,10 @@ const linksOrdered = {
       ],
     },
     {
-      category: "Web Dev",
+      category: "Music",
       links: [
-        { name: "Feel With Me", url: links.feelWithMe.home },
-        { name: "Sailing To Mars", url: "/" },
-        // { name: "Solitaire", url: links.solitaire.home },
-      ],
-    },
-    {
-      category: "Other",
-      links: [
-        { name: "Music", url: links.music },
-        // {name: '3D Printing', url: '/'},
-        // {name: 'Blog', url: }
+        { name: "Wedding DJing", url: links.djing.home },
+        { name: "Sailing To Mars", url: links.music },
       ],
     },
   ],

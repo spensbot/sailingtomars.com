@@ -27,13 +27,8 @@ export default function Djing() {
         There's nothing like the thrill of DJing a wedding, the most special day
         in a couple's life. The MC is responsible for creating an atmosphere
         that is loving, fun, emotional, and energetic. It requires an incredible
-        amount of care and planning.
-      </Typography>
-      <Typography>
-        <Typography gutterBottom>
-          I have been entrusted to manage this special day 6 times now. I love
-          the unique challenges that come alone
-        </Typography>
+        amount of care and planning. I have been entrusted with this special day
+        6 times now. I love the unique challenges that each wedding brings
       </Typography>
     </ProjectBlock>
   )
