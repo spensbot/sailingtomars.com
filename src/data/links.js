@@ -8,7 +8,7 @@ const links = {
     github: "https://github.com/spensbot/captivate",
   },
   djing: {
-    home: "/dj",
+    home: "https://dj.sailingtomars.com",
   },
 
   //Mechanical Engineering

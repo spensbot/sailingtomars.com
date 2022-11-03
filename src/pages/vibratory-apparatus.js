@@ -10,9 +10,20 @@ const IndexPage = () => {
         <Spacer />
         <h1>Vibratory Apparatus</h1>
         <p>
-          A concept for a material handling device. Involved the creation of a
-          small and medium-size prototype and a Provisional Patent
+          A concept for a material handling device. This project involved an
+          incredible variety of disciplines. It involved the creation of a small
+          and medium-size prototype and a provisional patent.
         </p>
+        <h2>Pitch Presentation</h2>
+        <iframe
+          src="https://docs.google.com/presentation/d/e/2PACX-1vSFFW2QvwhwGq9gewI5IZ5PnVw3YTssHb630obM17mqiVEq3DskpDnfwsuaTqbyRx84Dxbd2qRLejjD/embed?start=false&loop=false&delayms=3000"
+          frameborder="0"
+          width="100%"
+          height="569"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        ></iframe>
         <h2>How It Started</h2>
         <p>
           I used to work for a material handling company called Bulk Handling
@@ -55,16 +66,6 @@ const IndexPage = () => {
           provisional patent application has expired, and I don't have the
           resources to make a full-scale prototype for further testing
         </p>
-        <h2>Pitch Presentation</h2>
-        <iframe
-          src="https://docs.google.com/presentation/d/e/2PACX-1vSFFW2QvwhwGq9gewI5IZ5PnVw3YTssHb630obM17mqiVEq3DskpDnfwsuaTqbyRx84Dxbd2qRLejjD/embed?start=false&loop=false&delayms=3000"
-          frameborder="0"
-          width="100%"
-          height="569"
-          allowfullscreen="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        ></iframe>
         <h2>Prototype Overview</h2>
         <iframe
           width="560"

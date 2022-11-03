@@ -2,7 +2,7 @@ import React from "react"
 import ProjectBlock from "../projectBlock"
 import { links } from "../../../data/links"
 import { Typography } from "@material-ui/core"
-import projectImage from "../../../images/3d-printing/3D Geralt Sword Exploded.jpg"
+import projectImage from "../../../images/3d-printing/geralt-sword-exploded.jpg"
 
 export default function FdmPrinting() {
   const ProjectImage = (

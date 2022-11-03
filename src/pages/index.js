@@ -24,7 +24,7 @@ const IndexPage = () => {
     <Layout seoTitle="Home" usesHeader usesFooter>
       <Intro />
       <ProjectCategory
-        name="Software"
+        name="Software Development"
         description="When you combine today's technology with a fluency in programming, the sky is the limit as to what you can create."
       >
         <Captivate />
@@ -39,7 +39,7 @@ const IndexPage = () => {
       </ProjectCategory>
 
       <ProjectCategory
-        name="Performance"
+        name="Music"
         description="I have always been obsessed with the feeling of awe and energy that the perfect event creates. No matter what interest I explore, it always ties back to this."
       >
         <Djing />
