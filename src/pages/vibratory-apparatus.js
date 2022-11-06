@@ -5,7 +5,7 @@ import SiteContainer from "../components/SiteContainer"
 
 const IndexPage = () => {
   return (
-    <Layout seoTitle="Vibratory Apparatus" usesHeader usesFooter>
+    <Layout seoTitle="Vibratory Apparatus " usesHeader usesFooter>
       <SiteContainer>
         <Spacer />
         <h1>Vibratory Apparatus</h1>
