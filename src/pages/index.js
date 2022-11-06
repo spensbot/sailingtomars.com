@@ -31,8 +31,8 @@ const IndexPage = () => {
         <Spacer />
         <FeelWithMe />
         <Spacer />
-        {/* <SailingToMars />
-        <Spacer /> */}
+        <SailingToMars />
+        <Spacer />
         <LushDelay />
         <Spacer />
         <Crispy />
