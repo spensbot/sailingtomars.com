@@ -55,8 +55,10 @@ export default function Music() {
         My Personal Music Project
       </Typography>
       <Typography gutterBottom>
-        I've been writing music as long as I've been playing it. I have released
-        a number of songs with Genres ffrom Singer-Songwriter to Indie Pop.
+        My journey with music progressed very naturally. I never forced myself
+        to practice. It's one of those rare passions that perpetuates itself. I
+        released a number of songs in various genres from singer-songwriter to
+        indie pop.
       </Typography>
     </ProjectBlock>
   )
