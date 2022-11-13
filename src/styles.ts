@@ -49,6 +49,40 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${weight};
     margin: 0.1rem;
   }
+
+/* Smaller fonts for narrow devices */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+      font-weight: ${weight};
+      margin: 0.1rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: ${weight};
+      margin: 0.1rem;
+    }
+    h3 {
+      font-size: 2.2rem;
+      font-weight: ${weight};
+      margin: 0.1rem;
+    }
+    h4 {
+      font-size: 1.8rem;
+      font-weight: ${weight};
+      margin: 0.1rem;
+    }
+    h5 {
+      font-size: 1.4rem;
+      font-weight: ${weight};
+      margin: 0.1rem;
+    }
+    h6 {
+      font-size: 1.2rem;
+      font-weight: ${weight};
+      margin: 0.1rem;
+    }
+  }
 `
 
 export { theme, GlobalStyle }

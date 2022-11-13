@@ -5,6 +5,7 @@ import SiteContainer from '../components/SiteContainer'
 import FullwidthVid from '../components/basic/FullwidthVid'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
+import Footer from '../components/Footer'
 
 const FontFamily = styled.div`
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -33,10 +34,10 @@ const styles: { [key: string]: React.CSSProperties } = {
   raisedText: {
     color: '#ffffffbb',
     position: 'relative',
-    marginTop: '-70vh',
     padding: '0 5% 10rem 5%',
     maxWidth: '40rem',
     margin: 'auto',
+    marginTop: '-70vh',
     minHeight: '70vh',
     textAlign: 'center',
   },
@@ -85,9 +86,19 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
 }
 
+function Title({ children }: { children: string }) {
+  return (
+    <div>
+      <Spacer />
+      <h5>{children}</h5>
+      <Spacer rem={1} />
+    </div>
+  )
+}
+
 const Music = () => {
   return (
-    <Layout footer>
+    <Layout>
       <FontFamily>
         <div style={styles.root}>
           <div style={styles.parallaxPerspective}>
@@ -115,16 +126,18 @@ const Music = () => {
                 />
 
                 <div style={styles.raisedText}>
-                  <h4>
+                  <Title>
                     A while ago, someone asked me how I would spend my time if
                     money weren't an object.
-                  </h4>
-                  <h4>
+                  </Title>
+                  <Title>
                     I thought about if for a while, and responded that I would
                     spend my time creating things: software, games, music, and
                     music videos.
-                  </h4>
-                  <h4>Then I realized; That's already how I spend my time.</h4>
+                  </Title>
+                  <Title>
+                    Then I realized; That's already how I spend my time.
+                  </Title>
                 </div>
 
                 <SiteContainer>
@@ -137,36 +150,39 @@ const Music = () => {
                     allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/687556917&color=%23476999&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                   ></iframe>
-
-                  <h4>
+                  <Spacer />
+                  <Title>
                     I performed my song 'Stargazing' for an Apple of His Eye
                     charity event
-                  </h4>
+                  </Title>
                   <FullwidthVid src="https://www.youtube.com/embed/aKo-q7t5wzg" />
-
-                  <h4>
+                  <Spacer />
+                  <Title>
                     A collage of slow-mo videos taken in Spain, Portugal,
                     Panama, and Columbia. Set to a short, original song called
                     Never.
-                  </h4>
+                  </Title>
                   <FullwidthVid src="https://www.youtube.com/embed/dfw6rv2vtao" />
-
-                  <h4>
+                  <Spacer />
+                  <Title>
                     The 1975's Robbers is one of my favorite songs ever. Here's
                     a piano adaptation I wrote
-                  </h4>
+                  </Title>
                   <FullwidthVid src="https://www.youtube.com/embed/fGJxCxITUBo" />
-
-                  <h4>I made this music video for my song - Stargazing</h4>
+                  <Spacer />
+                  <Title>
+                    I made this music video for my song - Stargazing
+                  </Title>
                   <FullwidthVid src="https://www.youtube.com/embed/xHt1SIBlqsw" />
-
-                  <h4>
+                  <Spacer />
+                  <Title>
                     I've been kinda obsessed with Robbers, so I also developed
                     this Music video screenplay for the song.
-                  </h4>
+                  </Title>
                   <FullwidthVid src="https://www.youtube.com/embed/8eFln_xz5Hc" />
                 </SiteContainer>
                 <Spacer />
+                <Footer />
               </div>
             </div>
           </div>

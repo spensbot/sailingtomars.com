@@ -8,6 +8,11 @@ export default function Crispy() {
     <StaticImage
       src="../../../images/Crispy/Project Image.png"
       alt="Crispy Audio App Hero Image"
+      objectFit="cover"
+      style={{
+        height: '100%',
+        width: '100%',
+      }}
     />
   )
 

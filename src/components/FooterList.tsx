@@ -34,18 +34,18 @@ const Root = styled.div`
 `
 
 const Heading = styled.h6`
-  color: #eee;
+  color: #fff;
   text-align: left;
   margin-bottom: 0.4rem;
 `
 
 const Link = styled.a`
-  color: #aaa;
+  color: #ccc;
   text-align: left;
   text-decoration: none;
   :hover {
-    text-decoration: underline;
-    color: #ddd;
+    /* text-decoration: underline; */
+    color: #fff;
   }
   margin-bottom: 0.3rem;
 `

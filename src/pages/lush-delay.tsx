@@ -92,15 +92,16 @@ const Crispy = () => {
                       A Delay Plugin with lots of Versatility
                     </h2>
                     <h4>Create Timed Delays, Slap Delays, Doubling and More</h4>
-                    <h4>Coming soon in VST3 and AU formats</h4>
-                    <div style={{ display: 'flex', marginTop: '1rem' }}>
+                    <Spacer rem={2} />
+                    <h5>Coming soon in VST3 and AU formats</h5>
+                    {/* <div style={{ display: 'flex', marginTop: '1rem' }}>
                       <Button href={links.crispy.downloads.mac}>Mac</Button>
                       <Spacer vertical rem={1} />
                       <Button href={links.crispy.downloads.windows}>
                         Windows
                       </Button>
-                    </div>
-                    <Spacer rem={1} />
+                    </div> */}
+                    <Spacer rem={2} />
                     <ViewSourceCodeButton url={links.lushDelay.github} />
                   </div>
                 </div>

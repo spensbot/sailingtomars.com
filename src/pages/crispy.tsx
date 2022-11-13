@@ -51,10 +51,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     boxShadow: '0px 6px 25px 0px rgba(0,0,0,0.8)',
     WebkitBoxShadow: '0px 6px 25px 0px rgba(0,0,0,0.8)',
     MozBoxShadow: '0px 6px 25px 0px rgba(0,0,0,0.8)',
-    // flexGrow: '1',
-    width: '40%',
-    // minWidth: '15rem',
-    margin: '0 3% 3rem 3%',
+    width: '100%',
   },
   features: {
     textAlign: 'center',
@@ -85,8 +82,16 @@ const Crispy = () => {
                     margin: '0 -3%',
                   }}
                 >
-                  <div style={styles.headerImage}>
+                  <div
+                    style={{
+                      flexGrow: '1',
+                      width: '40%',
+                      minWidth: '15rem',
+                      margin: '0 3% 3rem 3%',
+                    }}
+                  >
                     <StaticImage
+                      style={styles.headerImage}
                       src="../images/Crispy/BorderLess.png"
                       alt="Crispy Audio Plugin Screenshot"
                     />

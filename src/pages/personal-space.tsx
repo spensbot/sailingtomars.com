@@ -5,6 +5,8 @@ import { links } from '../data/links'
 import SiteContainer from '../components/SiteContainer'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
+import Spacer from '../components/basic/Spacer'
+import ViewSourceCodeButton from '../components/basic/ViewSourceCodeButton'
 
 const ParticleBackground = styled.div`
   background-color: #444;
@@ -89,6 +91,7 @@ const PersonalSpace = () => {
         <SiteContainer>
           <div style={styles.root}>
             <ParticleBackground />
+            <Spacer rem={3} />
             <div style={styles.reallyBigHeader}>
               <div
                 style={{
@@ -112,6 +115,7 @@ const PersonalSpace = () => {
                   />
                 </div>
               </div>
+              <Spacer rem={3} />
 
               <div style={styles.promoVideo}>
                 <iframe
@@ -126,18 +130,19 @@ const PersonalSpace = () => {
               </div>
 
               <div style={styles.section}>
-                <h2 style={styles.subHeaderText}>
+                <h4 style={{ ...styles.subHeaderText, fontSize: '1.5rem' }}>
                   A Game About Fighting For Your God-Given Right To Privacy
-                </h2>
+                </h4>
               </div>
             </div>
-            <div style={styles.section}>
+            <Spacer rem={3} />
+            {/* <div style={styles.section}>
               <div style={styles.paper}>
                 <h2 style={styles.subHeaderText}>
                   Defend Your Personal Space Today
                 </h2>
               </div>
-            </div>
+            </div> */}
 
             <div style={styles.section}>
               <h2 style={styles.subHeaderText}>
@@ -152,7 +157,7 @@ const PersonalSpace = () => {
                 </div>
               </div>
             </div>
-
+            <Spacer rem={3} />
             <div style={styles.section}>
               <h2 style={styles.subHeaderText}>
                 Hit bombs in the center for a bigger explosion!
@@ -166,7 +171,7 @@ const PersonalSpace = () => {
                 </div>
               </div>
             </div>
-
+            <Spacer rem={3} />
             <div style={styles.section}>
               <h2 style={styles.subHeaderText}>
                 The game ends when an enemy successfully invades your personal
@@ -182,7 +187,7 @@ const PersonalSpace = () => {
                 </span>
               </div>
             </div>
-
+            <Spacer rem={3} />
             <div style={styles.section}>
               <h2 style={styles.subHeaderText}>
                 Experience Fine-Tuned Difficulty
@@ -202,14 +207,8 @@ const PersonalSpace = () => {
                     alignItems: 'center',
                   }}
                 >
-                  <h2 style={styles.subHeaderText}>
-                    Personal Space is Built with Unity
-                  </h2>
-                  <Button href={links.personalSpace.github}>
-                    <span style={styles.button}>
-                      {' -> '}view the source code on github
-                    </span>
-                  </Button>
+                  <h4>Personal Space is Built with Unity</h4>
+                  <ViewSourceCodeButton url={links.personalSpace.github} />
                 </div>
               </div>
             </div>

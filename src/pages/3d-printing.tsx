@@ -39,15 +39,13 @@ export default function FdmPrinting() {
   return (
     <Layout header footer>
       <SiteContainer>
-        {/* <Spacer />
+        <Spacer />
         <h1>3D Printing</h1>
         <p>
           I love the fast-paced prototyping and iteration allowed by a 3D
           printer. My background in 3D-modeling and mechanical analysis allow me
           to go from concept to product as efficiently as possible.
         </p>
-        <br />
-        <br />
         <p>
           This page showcases a fraction of what I have designed and printed
         </p>
@@ -71,8 +69,8 @@ export default function FdmPrinting() {
           </Image>
           <Image>
             <StaticImage
-              alt="../images/3d-printing/ciri-sword.jpg"
-              src="Ciri's sword from the Witcher 3"
+              alt="Ciri's sword from the Witcher 3"
+              src="../images/3d-printing/ciri-sword.jpg"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
@@ -82,15 +80,15 @@ export default function FdmPrinting() {
         <Group>
           <Image>
             <StaticImage
-              alt="../images/3d-printing/geralt-sword-exploded.png"
-              src="Exploded model of Geralts's sword from the Witcher 3"
+              src="../images/3d-printing/geralt-sword-exploded.png"
+              alt="Exploded model of Geralts's sword from the Witcher 3"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
           <Image>
             <StaticImage
-              alt="../images/3d-printing/geralt-sword.jpg"
-              src="Geralt's sword from the Witcher 3"
+              src="../images/3d-printing/geralt-sword.jpg"
+              alt="Geralt's sword from the Witcher 3"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
@@ -105,8 +103,8 @@ export default function FdmPrinting() {
         <Group>
           <Image rem={40}>
             <StaticImage
-              alt="../images/3d-printing/ping-pong-trophy.png"
-              src="3D Model of a Ping Pong Trophy"
+              src="../images/3d-printing/ping-pong-trophy.png"
+              alt="3D Model of a Ping Pong Trophy"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
@@ -122,15 +120,15 @@ export default function FdmPrinting() {
         <Group>
           <Image rem={25}>
             <StaticImage
-              alt="../images/3d-printing/kanye-bear-model.png"
-              src="3D Model of Kanye West's Dropout Bear"
+              src="../images/3d-printing/kanye-bear-model.png"
+              alt="3D Model of Kanye West's Dropout Bear"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
           <Image rem={20}>
             <StaticImage
-              alt="../images/3d-printing/kanye-bear.jpg"
-              src="Kanye West's Dropout Bear model"
+              src="../images/3d-printing/kanye-bear.jpg"
+              alt="Kanye West's Dropout Bear model"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
@@ -145,27 +143,27 @@ export default function FdmPrinting() {
         <Group>
           <Image rem={25}>
             <StaticImage
-              alt="../images/3d-printing/light-fixture-bracket.png"
-              src="A bracket for installing a lighting fixture"
+              src="../images/3d-printing/light-fixture-bracket.png"
+              alt="A bracket for installing a lighting fixture"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
           <Image rem={25}>
             <StaticImage
-              alt="../images/3d-printing/piano-slider-bracket.png"
-              src="A bracket for installing a piano under a desk using drawer slides"
+              src="../images/3d-printing/piano-slider-bracket.png"
+              alt="A bracket for installing a piano under a desk using drawer slides"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
           <Image>
             <StaticImage
-              alt="../images/3d-printing/longboard-hanger.jpg"
-              src="A bracket for hanging a Longboard"
+              src="../images/3d-printing/longboard-hanger.jpg"
+              alt="A bracket for hanging a Longboard"
               style={{ width: '100%', height: 'auto' }}
             />
           </Image>
         </Group>
-        <Spacer /> */}
+        <Spacer />
       </SiteContainer>
     </Layout>
   )

@@ -9,7 +9,7 @@ import FullwidthVid from '../components/basic/FullwidthVid'
 
 export default function contact() {
   const imageWrapper = {
-    maxWidth: '500px',
+    maxWidth: '40rem',
   }
 
   return (
