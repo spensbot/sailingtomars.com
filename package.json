@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-ts",
+  "name": "sailing-to-mars",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby-ts",
-  "author": "spensbot",
+  "description": "A portfolio site for Spenser Saling",
+  "author": "Spenser Saling",
   "keywords": [
     "gatsby"
   ],
