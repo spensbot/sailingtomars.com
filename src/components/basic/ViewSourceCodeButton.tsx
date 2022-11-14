@@ -12,6 +12,7 @@ const Button = styled.a`
   :hover {
     text-decoration: underline;
   }
+  width: fit-content;
 `
 
 const Logo = styled.div`
