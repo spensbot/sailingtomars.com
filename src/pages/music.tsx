@@ -116,6 +116,7 @@ const Music = () => {
                   <StaticImage
                     src="../images/music/mars.png"
                     alt="A falsified image of mars over the water"
+                    placeholder="blurred"
                   />
                 </div>
               </div>
@@ -123,6 +124,7 @@ const Music = () => {
                 <StaticImage
                   src="../images/music/water.png"
                   alt="A body of water at night"
+                  placeholder="blurred"
                 />
 
                 <div style={styles.raisedText}>

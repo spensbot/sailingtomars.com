@@ -9,6 +9,7 @@ export default function GarageLights() {
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       src="../../../images/Garage Lights/hollywoodHouse.jpg"
       alt="Garage Lights in action at my apartment in north Hollywood"
+      placeholder="blurred"
     />
   )
 

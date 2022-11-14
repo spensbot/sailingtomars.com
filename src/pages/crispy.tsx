@@ -94,6 +94,7 @@ const Crispy = () => {
                       style={styles.headerImage}
                       src="../images/Crispy/BorderLess.png"
                       alt="Crispy Audio Plugin Screenshot"
+                      placeholder="blurred"
                     />
                   </div>
                   <div

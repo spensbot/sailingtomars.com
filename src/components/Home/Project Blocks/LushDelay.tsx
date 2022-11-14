@@ -25,6 +25,7 @@ export default () => {
         style={imageStyle}
         alt="Lush Delay"
         objectFit="contain"
+        placeholder="blurred"
       />
     </div>
   )

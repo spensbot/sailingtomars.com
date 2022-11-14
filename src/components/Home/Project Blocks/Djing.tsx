@@ -9,6 +9,7 @@ export default function Djing() {
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       src="../../../images/djing/DanceFar2.jpg"
       alt="A lit dance floor"
+      placeholder="blurred"
     />
   )
 

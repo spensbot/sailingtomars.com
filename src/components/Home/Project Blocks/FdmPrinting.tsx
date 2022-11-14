@@ -9,6 +9,7 @@ export default function FdmPrinting() {
       style={{ width: '100%', height: '100%', objectFit: 'contain' }}
       src="../../../images/3d-printing/geralt-sword-exploded.jpg"
       alt="The Witcher 3 Geralt of Rivia Sword Model - Exploded"
+      placeholder="blurred"
     />
   )
 

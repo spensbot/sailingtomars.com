@@ -9,6 +9,7 @@ export default function ParticleSystemDesigner() {
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       src="../../../images/Particle System Designer/screenshot2.png"
       alt="Particle System Designer"
+      placeholder="blurred"
     />
   )
 

@@ -9,6 +9,7 @@ export default function VibePan() {
       style={{ width: '100%', height: '100%', objectFit: 'contain' }}
       src="../../../images/vibe-pan/vibe-pan-title.jpg"
       alt="Vibe Pan Concept Design Overview"
+      placeholder="blurred"
     />
   )
 

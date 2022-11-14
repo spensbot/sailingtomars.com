@@ -19,6 +19,7 @@ export default function Captivate() {
         style={{ width: '15rem', height: '15rem' }}
         src="../../../images/Captivate/icon.svg"
         alt="Captive Light and Visual Synth Logo"
+        placeholder="blurred"
       />
     </div>
   )

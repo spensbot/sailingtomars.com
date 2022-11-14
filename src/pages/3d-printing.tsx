@@ -65,6 +65,7 @@ export default function FdmPrinting() {
               alt="Exploded model of Ciri's sword from the Witcher 3"
               src="../images/3d-printing/ciri-sword-exploded.png"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
           <Image>
@@ -72,6 +73,7 @@ export default function FdmPrinting() {
               alt="Ciri's sword from the Witcher 3"
               src="../images/3d-printing/ciri-sword.jpg"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
         </Group>
@@ -83,6 +85,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/geralt-sword-exploded.png"
               alt="Exploded model of Geralts's sword from the Witcher 3"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
           <Image>
@@ -90,6 +93,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/geralt-sword.jpg"
               alt="Geralt's sword from the Witcher 3"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
         </Group>
@@ -106,6 +110,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/ping-pong-trophy.png"
               alt="3D Model of a Ping Pong Trophy"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
         </Group>
@@ -123,6 +128,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/kanye-bear-model.png"
               alt="3D Model of Kanye West's Dropout Bear"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
           <Image rem={20}>
@@ -130,6 +136,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/kanye-bear.jpg"
               alt="Kanye West's Dropout Bear model"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
         </Group>
@@ -146,6 +153,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/light-fixture-bracket.png"
               alt="A bracket for installing a lighting fixture"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
           <Image rem={25}>
@@ -153,6 +161,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/piano-slider-bracket.png"
               alt="A bracket for installing a piano under a desk using drawer slides"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
           <Image>
@@ -160,6 +169,7 @@ export default function FdmPrinting() {
               src="../images/3d-printing/longboard-hanger.jpg"
               alt="A bracket for hanging a Longboard"
               style={{ width: '100%', height: 'auto' }}
+              placeholder="blurred"
             />
           </Image>
         </Group>

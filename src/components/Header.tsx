@@ -69,7 +69,7 @@ const Header = ({}) => {
               <StaticImage
                 src="../images/logo/logoOriginal.png"
                 alt="Sailing To Mars Logo"
-                placeholder="tracedSVG"
+                placeholder="blurred"
               />
             </Logo>
           </div>

@@ -24,6 +24,7 @@ export default () => {
         style={imageStyle}
         src="../../../images/Feel With Me/logo512nbg.png"
         alt="Feel With Me Hero image"
+        placeholder="blurred"
       />
     </div>
   )

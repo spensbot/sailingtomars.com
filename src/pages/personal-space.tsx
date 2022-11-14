@@ -105,6 +105,7 @@ const PersonalSpace = () => {
                   <StaticImage
                     src="../images/Personal Space/Player.svg"
                     alt="The Personal Space Player"
+                    placeholder="blurred"
                   />
                 </div>
                 <h1 style={styles.headerText}>Personal Space</h1>
@@ -112,6 +113,7 @@ const PersonalSpace = () => {
                   <StaticImage
                     src="../images/Personal Space/Enemy.svg"
                     alt="The Personal Space Enemy"
+                    placeholder="blurred"
                   />
                 </div>
               </div>
@@ -153,6 +155,7 @@ const PersonalSpace = () => {
                   <StaticImage
                     src="../images/Personal Space/Enemies Graphic.png"
                     alt="A bunch of enemies around the player"
+                    placeholder="blurred"
                   />
                 </div>
               </div>
@@ -167,6 +170,7 @@ const PersonalSpace = () => {
                   <StaticImage
                     src="../images/Personal Space/Bomb Graphic.png"
                     alt="The Player Activating Bombss"
+                    placeholder="blurred"
                   />
                 </div>
               </div>
@@ -195,6 +199,7 @@ const PersonalSpace = () => {
               <StaticImage
                 src="../images/Personal Space/Difficulty Graph.png"
                 alt="The Personal Space Player"
+                placeholder="blurred"
               />
             </div>
 

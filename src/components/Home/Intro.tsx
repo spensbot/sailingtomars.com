@@ -56,6 +56,7 @@ export default function AboutTheName() {
           <StaticImage
             src="../../images/home/me.jpg"
             alt="Spenser Saling. Creative Engineer"
+            placeholder="blurred"
           />
         </RowItem>
       </Row>

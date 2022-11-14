@@ -25,6 +25,7 @@ export default function Music() {
         }}
         src="../../../images/music/water.png"
         alt="Water Beneath Mars"
+        placeholder="blurred"
       />
       <StaticImage
         style={{
@@ -37,6 +38,7 @@ export default function Music() {
         objectFit="contain"
         src="../../../images/music/mars.png"
         alt="Mars"
+        placeholder="blurred"
       />
     </div>
   )

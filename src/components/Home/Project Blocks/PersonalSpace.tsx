@@ -9,6 +9,7 @@ export default function PersonalSpace() {
       src="../../../images/Personal Space/Project Image.png"
       style={{ width: '100%', height: '100%' }}
       alt="Personal Space Game Screenshot"
+      placeholder="blurred"
     />
   )
 

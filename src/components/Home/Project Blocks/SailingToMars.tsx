@@ -24,6 +24,7 @@ export default function PersonalSpace() {
         style={imageStyle}
         src="../../../images/logo/logoOriginal.png"
         alt="Sailing To Mars Hero Logo. It's a cute sailboat!"
+        placeholder="blurred"
       />
     </div>
   )
