@@ -29,21 +29,13 @@ const IndexPage = () => {
       >
         <Captivate />
         <Spacer />
+        <Crispy />
+        <Spacer />
+        {/* <SailingToMars />
+        <Spacer /> */}
         <FeelWithMe />
         <Spacer />
-        <SailingToMars />
-        <Spacer />
         <LushDelay />
-        <Spacer />
-        <Crispy />
-      </ProjectCategory>
-      <ProjectCategory
-        name="Music"
-        description="I have always been obsessed with the feeling of awe and energy that the perfect event creates. No matter what interest I explore, it always ties back to this."
-      >
-        <Djing />
-        <Spacer />
-        <Music />
       </ProjectCategory>
       <ProjectCategory
         name="Mechanical Engineering"
@@ -62,6 +54,14 @@ const IndexPage = () => {
         <TheRestOfUs />
         <Spacer />
         <ParticleSystemDesigner />
+      </ProjectCategory>
+      <ProjectCategory
+        name="Music"
+        description="I have always been obsessed with the feeling of awe and energy that the perfect event creates. No matter what interest I explore, it always ties back to this."
+      >
+        <Djing />
+        <Spacer />
+        <Music />
       </ProjectCategory>
       {/* <ProjectCategory
         name="Web Development"

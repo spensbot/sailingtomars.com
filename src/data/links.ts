@@ -1,87 +1,87 @@
 // ALL HARD CODED LINKS GO HERE
 const links = {
-  index: "https://sailingtomars.com",
+  index: 'https://sailingtomars.com',
 
   //Music, Lighting, and Visuals,
   captivate: {
-    home: "https://captivatesynth.com",
-    github: "https://github.com/spensbot/captivate",
+    home: 'https://captivatesynth.com',
+    github: 'https://github.com/spensbot/captivate',
   },
   djing: {
-    home: "https://dj.sailingtomars.com",
+    home: 'https://dj.sailingtomars.com',
   },
 
   //Mechanical Engineering
   vibePan: {
-    home: "/vibratory-apparatus",
+    home: '/vibratory-apparatus',
   },
   fdmPrinting: {
-    home: "/3d-printing",
+    home: '/3d-printing',
   },
 
   //Web Dev
   sailingToMars: {
-    home: "/",
-    resume: "/resume",
-    resumePDF: "/resume2.pdf",
-    contact: "/contact",
-    github: "https://github.com/spensbot/sailingtomars.com",
+    home: '/',
+    resume: '/resume',
+    resumeSVG: '/spenser_saling_resume_2022.svg',
+    resumePDF: '/spenser_saling_resume_2022.pdf',
+    contact: '/contact',
+    github: 'https://github.com/spensbot/sailingtomars.com',
   },
   feelWithMe: {
-    home: "https://feelwithme.net",
-    github: "https://github.com/spensbot/feelwithme",
+    home: 'https://feelwithme.net',
+    github: 'https://github.com/spensbot/feelwithme',
   },
   solitaire: {
-    home: "https://react-solitaire.netlify.app/",
-    github: "https://github.com/spensbot/react-solitaire",
+    home: 'https://react-solitaire.netlify.app/',
+    github: 'https://github.com/spensbot/react-solitaire',
   },
 
   //Game Dev
   personalSpace: {
-    home: "/personal-space",
-    iosStore: "/",
-    googlePlay: "/",
-    github: "https://github.com/spensbot/Personal-Space",
+    home: '/personal-space',
+    iosStore: '/',
+    googlePlay: '/',
+    github: 'https://github.com/spensbot/Personal-Space',
   },
   theRestOfUs: {
-    home: "/the-rest-of-us",
-    github: "https://github.com/spensbot/The-Rest-of-Us",
+    home: '/the-rest-of-us',
+    github: 'https://github.com/spensbot/The-Rest-of-Us',
   },
   particleSystemDesigner: {
-    home: "/particle-system-designer",
-    github: "https://github.com/spensbot/Particle-System-Designer",
+    home: '/particle-system-designer',
+    github: 'https://github.com/spensbot/Particle-System-Designer',
   },
 
   //Music Software
   crispy: {
-    home: "/crispy",
-    github: "https://github.com/spensbot/crispy",
+    home: '/crispy',
+    github: 'https://github.com/spensbot/crispy',
     downloads: {
-      mac:
-        "https://github.com/spensbot/crispy/tree/master/Release%20Builds/Mac%20(64%20bit)",
+      mac: 'https://github.com/spensbot/crispy/tree/master/Release%20Builds/Mac%20(64%20bit)',
       windows:
-        "https://github.com/spensbot/crispy/tree/master/Release%20Builds/Windows%20(64%20bit)",
+        'https://github.com/spensbot/crispy/tree/master/Release%20Builds/Windows%20(64%20bit)',
     },
   },
   lushDelay: {
-    home: "/lush-delay",
-    github: "https://github.com/spensbot/Lush-Delay",
+    home: '/lush-delay',
+    github: 'https://github.com/spensbot/Lush-Delay',
   },
   garageLights: {
-    home: "/garage-lights",
-    github: "https://github.com/spensbot/Garage-Lights",
+    home: '/garage-lights',
+    github: 'https://github.com/spensbot/Garage-Lights',
   },
 
   //Other
-  music: "/music",
+  music: '/music',
 
   //Social
   socialMedia: {
-    facebook: "https://www.facebook.com/spenser.saling",
-    instagram: "https://www.instagram.com/spenser_saling/",
-    linkedIn: "https://www.linkedin.com/in/spenser-saling-4a0833aa/",
-    github: "https://github.com/spensbot",
-    soundCloud: "https://soundcloud.com/salingtomars",
+    facebook: 'https://www.facebook.com/spenser.saling',
+    instagram: 'https://www.instagram.com/spenser_saling/',
+    linkedIn: 'https://www.linkedin.com/in/spenser-saling-4a0833aa/',
+    github: 'https://github.com/spensbot',
+    soundCloud: 'https://soundcloud.com/salingtomars',
   },
 }
 
@@ -91,48 +91,48 @@ const linksOrdered = {
   //-----------------     FOOTER LINKS     ---------------
   byCategory: [
     {
-      category: "Main",
+      category: 'Main',
       links: [
-        { name: "Home", url: links.sailingToMars.home },
-        { name: "Resume", url: links.sailingToMars.resume },
-        { name: "Contact", url: links.sailingToMars.contact },
+        { name: 'Home', url: links.sailingToMars.home },
+        { name: 'Resume', url: links.sailingToMars.resume },
+        { name: 'Contact', url: links.sailingToMars.contact },
       ],
     },
     {
-      category: "Software",
+      category: 'Software',
       links: [
-        { name: "Captivate", url: links.captivate.home },
-        { name: "Feel With Me", url: links.feelWithMe.home },
-        { name: "Lush Delay", url: links.lushDelay.home },
-        { name: "Crispy", url: links.crispy.home },
+        { name: 'Captivate', url: links.captivate.home },
+        { name: 'Feel With Me', url: links.feelWithMe.home },
+        { name: 'Lush Delay', url: links.lushDelay.home },
+        { name: 'Crispy', url: links.crispy.home },
         // { name: "Sailing To Mars", url: "/" },
         // { name: "Solitaire", url: links.solitaire.home },
         // { name: "Garage Lights", url: links.garageLights.home },
       ],
     },
     {
-      category: "Mechanical",
+      category: 'Mechanical',
       links: [
-        { name: "Vibe Pan Feeder", url: links.vibePan.home },
-        { name: "3D Printing", url: links.fdmPrinting.home },
+        { name: 'Vibe Pan Feeder', url: links.vibePan.home },
+        { name: '3D Printing', url: links.fdmPrinting.home },
       ],
     },
     {
-      category: "Game Dev",
+      category: 'Game Dev',
       links: [
-        { name: "Personal Space", url: links.personalSpace.home },
-        { name: "The Rest of Us", url: links.theRestOfUs.home },
+        { name: 'Personal Space', url: links.personalSpace.home },
+        { name: 'The Rest of Us', url: links.theRestOfUs.home },
         {
-          name: "Particle System Designer",
+          name: 'Particle System Designer',
           url: links.particleSystemDesigner.home,
         },
       ],
     },
     {
-      category: "Music",
+      category: 'Music',
       links: [
-        { name: "Wedding DJing", url: links.djing.home },
-        { name: "Sailing To Mars", url: links.music },
+        { name: 'Wedding DJing', url: links.djing.home },
+        { name: 'Sailing To Mars', url: links.music },
       ],
     },
   ],

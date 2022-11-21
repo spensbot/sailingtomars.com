@@ -14,6 +14,7 @@ import imageEven from '../images/Crispy/even.png'
 import imageHighLow from '../images/Crispy/highlow.png'
 import imageOdd from '../images/Crispy/odd.png'
 import imageOversampling from '../images/Crispy/oversampling.png'
+import imageHeader from '../images/Crispy/BorderLess.png'
 import ViewSourceCodeButton from '../components/basic/ViewSourceCodeButton'
 
 const FontFamily = styled.div`
@@ -59,6 +60,18 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
 }
 
+const Hero = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  margin-bottom: 3rem;
+`
+
+const HeroItem = styled.div`
+  flex: 1 1 15rem;
+  margin: 1rem;
+`
+
 const Button = styled.a``
 
 const Crispy = () => {
@@ -72,39 +85,17 @@ const Crispy = () => {
             </h1>
             <SiteContainer>
               <div style={{ display: 'flex' }}>
-                <div
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    flexWrap: 'wrap',
-                    alignItems: 'top',
-                    justifyContent: 'left',
-                    margin: '0 -3%',
-                  }}
-                >
-                  <div
-                    style={{
-                      flexGrow: '1',
-                      width: '40%',
-                      minWidth: '15rem',
-                      margin: '0 3% 3rem 3%',
-                    }}
-                  >
-                    <StaticImage
+                <Hero>
+                  <HeroItem>
+                    <img style={styles.headerImage} src={imageHeader} />
+                    {/* <StaticImage
                       style={styles.headerImage}
                       src="../images/Crispy/BorderLess.png"
                       alt="Crispy Audio Plugin Screenshot"
                       placeholder="blurred"
-                    />
-                  </div>
-                  <div
-                    style={{
-                      flexGrow: '1',
-                      width: '40%',
-                      minWidth: '15rem',
-                      margin: '0 3% 3rem 3%',
-                    }}
-                  >
+                    /> */}
+                  </HeroItem>
+                  <HeroItem>
                     <h2 style={styles.subFont}>
                       A powerful saturation plugin for music production
                     </h2>
@@ -118,8 +109,8 @@ const Crispy = () => {
                     </div>
                     <Spacer rem={1} />
                     <ViewSourceCodeButton url={links.crispy.github} />
-                  </div>
-                </div>
+                  </HeroItem>
+                </Hero>
               </div>
             </SiteContainer>
           </div>

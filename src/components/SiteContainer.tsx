@@ -9,7 +9,7 @@ const Root = styled.div`
 
 const Container = styled.div`
   width: 95%;
-  max-width: 58rem;
+  max-width: 55rem;
 `
 
 export default function SiteContainer({
