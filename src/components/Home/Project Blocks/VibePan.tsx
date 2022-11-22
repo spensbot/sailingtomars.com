@@ -15,7 +15,7 @@ export default function VibePan() {
 
   return (
     <ProjectBlock
-      name="Vibratory Pan Feeder"
+      name="Vibe Pan"
       Image={projectImage}
       url={links.vibePan.home}
       coreTechnology="Harmonic Analysis / 3D Printing / Laser Cutting / Arduino"

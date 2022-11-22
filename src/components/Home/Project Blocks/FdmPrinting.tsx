@@ -19,7 +19,6 @@ export default function FdmPrinting() {
       Image={ProjectImage}
       url={links.fdmPrinting.home}
       coreTechnology="Autodesk Fusion / Cura"
-      githubUrl={links.crispy.github}
     >
       <h4>A ton of rapid prototype concepts</h4>
       <p>

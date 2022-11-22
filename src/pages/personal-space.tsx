@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-// import ParticleBackground from '../components/Personal Space/particleBackground'
+import ParticleBackground from '../components/ParticleBackground'
 import { links } from '../data/links'
 import SiteContainer from '../components/SiteContainer'
 import styled from 'styled-components'
@@ -8,19 +8,20 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Spacer from '../components/basic/Spacer'
 import ViewSourceCodeButton from '../components/basic/ViewSourceCodeButton'
 
-const ParticleBackground = styled.div`
-  background-color: #444;
-`
-
 const FontFamily = styled.div`
   font-family: 'Amatic SC', 'Helvetica', 'Arial', sans-serif;
-  background-color: rgb(70, 70, 100);
   color: rgb(240, 240, 240);
 `
+
+const BORDER_INNER_RADIUS = 1.2
+const SILVER_LINING = 0.1
+const BORDER_THICKNESS = 0.6
+const BORDER_OUTER_RADIUS = BORDER_INNER_RADIUS + BORDER_THICKNESS
 
 const styles: { [key: string]: React.CSSProperties } = {
   root: {
     color: '#fff',
+    // position: 'relative',
   },
   reallyBigHeader: {
     color: '#fff',
@@ -58,10 +59,10 @@ const styles: { [key: string]: React.CSSProperties } = {
     textAlign: 'center',
   },
   promoVideo: {
-    padding: '1rem .5rem',
+    padding: `${BORDER_THICKNESS}rem`,
     backgroundColor: '#111111',
-    border: '.2rem solid silver',
-    borderRadius: '1.5rem',
+    border: `${SILVER_LINING}rem solid silver`,
+    borderRadius: `${BORDER_OUTER_RADIUS}rem`,
     display: 'inline-block',
     // '-webkit-box-shadow': '0px 5px 17px 4px rgba(0,0,0,0.49)',
     // '-moz-box-shadow': '0px 5px 17px 4px rgba(0,0,0,0.49)',
@@ -87,10 +88,10 @@ const styles: { [key: string]: React.CSSProperties } = {
 const PersonalSpace = () => {
   return (
     <Layout footer>
+      <ParticleBackground />
       <FontFamily>
         <SiteContainer>
           <div style={styles.root}>
-            <ParticleBackground />
             <Spacer rem={3} />
             <div style={styles.reallyBigHeader}>
               <div
@@ -120,15 +121,22 @@ const PersonalSpace = () => {
               <Spacer rem={3} />
 
               <div style={styles.promoVideo}>
-                <iframe
-                  title="Personal Space Promo Video"
-                  width="270"
-                  height="514"
-                  src="https://www.youtube.com/embed/sas6KopcWWs"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <div
+                  style={{
+                    borderRadius: `${BORDER_INNER_RADIUS}rem`,
+                    overflow: 'hidden',
+                  }}
+                >
+                  <iframe
+                    title="Personal Space Promo Video"
+                    width="270"
+                    height="514"
+                    src="https://www.youtube.com/embed/sas6KopcWWs"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
 
               <div style={styles.section}>
@@ -196,6 +204,7 @@ const PersonalSpace = () => {
               <h2 style={styles.subHeaderText}>
                 Experience Fine-Tuned Difficulty
               </h2>
+              <Spacer rem={1} />
               <StaticImage
                 src="../images/Personal Space/Difficulty Graph.png"
                 alt="The Personal Space Player"
@@ -212,7 +221,8 @@ const PersonalSpace = () => {
                     alignItems: 'center',
                   }}
                 >
-                  <h4>Personal Space is Built with Unity</h4>
+                  <h4>Built with Unity</h4>
+                  <Spacer rem={1} />
                   <ViewSourceCodeButton url={links.personalSpace.github} />
                 </div>
               </div>
