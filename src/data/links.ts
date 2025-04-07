@@ -23,8 +23,8 @@ const links = {
   sailingToMars: {
     home: '/',
     resume: '/resume',
-    resumeSVG: '/spenser_saling_resume_2022.svg',
-    resumePDF: '/spenser_saling_resume_2022.pdf',
+    resumeSVG: '/SpenserSaling_Resume_Bezi.svg',
+    resumePDF: '/SpenserSaling_Resume_Bezi.pdf',
     contact: '/contact',
     github: 'https://github.com/spensbot/sailingtomars.com',
   },
